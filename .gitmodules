@@ -1,0 +1,27 @@
+[submodule "pack/eddcode/start/ale"]
+	path = pack/eddcode/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "pack/eddcode/start/nerdtree"]
+	path = pack/eddcode/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/eddcode/start/vim-devicons"]
+	path = pack/eddcode/start/vim-devicons
+	path = https://github.com/ryanoasis/vim-devicons
+[submodule "pack/eddcode/start/vim-polyglot"]
+	path = pack/eddcode/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
+[submodule "pack/deoplete/start/deoplete.nvim"]
+	path = pack/deoplete/start/deoplete.nvim
+	url = https://github.com/Shougo/deoplete.nvim
+[submodule "pack/deoplete/start/LanguageClient-neovim"]
+	path = pack/deoplete/start/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim
+[submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
+	path = pack/nvim/opt/vim-hug-neovim-rpc
+	url = https://github.com/roxma/vim-hug-neovim-rpc
+[submodule "pack/theme/start/vim-airline"]
+	path = pack/theme/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/theme/start/vim-airline-themes"]
+	path = pack/theme/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
