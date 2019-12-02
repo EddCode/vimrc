@@ -53,15 +53,21 @@ set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 
 " Shortcuts for switching the buffers
-map <C-N> :bnext<CR>
-map <C-P> :bprev<CR>
-map <C-B> :buffers<CR>
+map <Leader>n :buffers<CR>
+map <Leader>p :bprev<CR>
+map <Leader>b :buffers<CR>
 
 let mapleader=","
 
 " A way for switching relative numbers with a single map.
 nmap <C-R> :set invrelativenumber<CR>
 imap <C-R> <ESC>:set invrelativenumber<CR>a
+
+" Shorcuts for swu=itching the buffers
+map <Leader>n :bnext<CR>
+map <Leader>p :bprev<CR>
+map <Leader>b :buffers<CR>
+map <Leader>c :bd<CR>
 
 " Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
 function DeleteHiddenBuffers()

@@ -10,12 +10,6 @@
 [submodule "pack/eddcode/start/vim-polyglot"]
 	path = pack/eddcode/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "pack/deoplete/start/deoplete.nvim"]
-	path = pack/deoplete/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim
-[submodule "pack/deoplete/start/LanguageClient-neovim"]
-	path = pack/deoplete/start/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim
 [submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
 	path = pack/nvim/opt/vim-hug-neovim-rpc
 	url = https://github.com/roxma/vim-hug-neovim-rpc
@@ -28,3 +22,12 @@
 [submodule "pack/theme/start/vim-airline-themes"]
 	path = pack/theme/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/eddcode/start/ctrlp.vim"]
+	path = pack/eddcode/start/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/eddcode/start/coc.nvim"]
+	path = pack/eddcode/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/eddcode/start/emmet-vim"]
+	path = pack/eddcode/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git

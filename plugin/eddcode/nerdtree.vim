@@ -1,6 +1,6 @@
 " NERDtree
 "
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>nf :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=35
