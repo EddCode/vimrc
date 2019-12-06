@@ -31,3 +31,9 @@
 [submodule "pack/eddcode/start/emmet-vim"]
 	path = pack/eddcode/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "pack/theme/start/vim-devicons"]
+	path = pack/theme/start/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/start/gruvbox"]
+	path = pack/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

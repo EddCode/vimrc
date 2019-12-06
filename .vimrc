@@ -15,7 +15,8 @@ set autoindent              " autoindent always ON.
 set tabstop=4 
 set wrap 		    " wrap line if it`s larger
 " Modify some other settings about files
-set encoding=utf-8          " always use unicode (god damnit, windows)
+set encoding=utf8          " always use unicode (god damnit, windows)
+set guifont=Fira_Code_Nerd_Font:11
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 
@@ -29,7 +30,7 @@ set laststatus=1
 syntax on
 set t_Co=256
 set background=dark 
-colorscheme dracula
+colorscheme gruvbox
 
 " setup cursor
 highlight Cursor guifg=green guibg=black
