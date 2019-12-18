@@ -52,6 +52,7 @@ set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
+set autoread			" refreshing file
 
 " Shortcuts for switching the buffers
 map <Leader>n :buffers<CR>

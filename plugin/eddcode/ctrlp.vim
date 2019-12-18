@@ -1,13 +1,12 @@
 " File listing
-let g:ctrlp_user_command = 'find %s -type f'
+"let g:ctrlp_user_command = 'find %s -type f'
 
 " ignore files
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store  " MacOSX/Linux
 
-let g:ctrlp_custom_ignore = '\v[\/](node_modules)?\.(git|hg|svn)$'
+
+" Ignore some folders and files for CtrlP indexing
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules)?\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
+  \ 'dir':  '\.git$\|node_modules\|log\|tmp\|dist$',
+  \ 'file': '\.so$\|\.dat$|\.DS_Store$'
   \ }
-
