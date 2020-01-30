@@ -25,6 +25,7 @@
 [submodule "pack/eddcode/start/coc.nvim"]
 	path = pack/eddcode/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
+	branch = release
 [submodule "pack/eddcode/start/emmet-vim"]
 	path = pack/eddcode/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
