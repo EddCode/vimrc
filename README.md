@@ -51,3 +51,8 @@ $ cd ~/.vim
 $ git submodule foreach git pull origin master
 ```
 
+## Module fonts
+This vim settings use [VimDevicons](https://github.com/ryanoasis/vim-devicons) to show icons in vim, however weather you wanted show icons
+you need [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts), 'Couse it works with patched fonts
+
+> See [configuration Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#font-installation) for more information 
