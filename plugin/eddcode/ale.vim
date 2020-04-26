@@ -15,7 +15,8 @@ let g:airline#extensions#ale#enabled = 1	" Set this. Airline will handle the res
 
 let b:ale_completion_enabled = 1
 
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
+let g:ale_linters_explicit = 1
 let g:ale_linters = {
 	\ 'javascript': ['eslint'],
 	\ 'python': ['pylint', 'flake8'],
@@ -23,7 +24,7 @@ let g:ale_linters = {
 	\ 'vuejs': ['eslint', 'vls'],
 	\ }
 let g:ale_fixers = {
-	\ 'javascript': ['prettier', 'eslint'],
+	\ 'javascript': ['eslint'],
 	\ 'python': ['black'],
 	\ 'ruby': ['rubocop'],
 	\ 'vuejs': ['prettier'],

@@ -35,3 +35,6 @@
 [submodule "pack/theme/start/vim-devicons"]
 	path = pack/theme/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/eddcode/start/vim-minimap"]
+	path = pack/eddcode/start/vim-minimap
+	url = https://github.com/severin-lemaignan/vim-minimap.git
