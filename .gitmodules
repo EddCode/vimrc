@@ -35,12 +35,9 @@
 [submodule "pack/theme/start/vim-devicons"]
 	path = pack/theme/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
-[submodule "pack/deoplete/start/deoplete.nvim"]
-	path = pack/deoplete/start/deoplete.nvim
-	url = https://github.com/Shougo/deoplete.nvim.git
-[submodule "pack/deoplete/start/LanguageClient-neovim"]
-	path = pack/deoplete/start/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim.git
 [submodule "pack/eddcode/start/coc.vim"]
 	path = pack/eddcode/start/coc.vim
 	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/eddcode/start/vim-minimap"]
+	path = pack/eddcode/start/vim-minimap
+	url = https://github.com/severin-lemaignan/vim-minimap.git
