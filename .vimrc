@@ -23,8 +23,7 @@ set undodir=~/.vim/undodir
 
 " Modify indenting settings
 set autoindent              " autoindent always ON.
-set tabstop=4 
-set wrap 		    " wrap line if it`s larger
+set wrap 		    	" wrap line if it`s larger
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
 set guifont=Fira_Code_Nerd_Font:11
@@ -65,12 +64,13 @@ set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 set autoread			" refreshing file
 
+let mapleader=","
+
 " Shortcuts for switching the buffers
 map <Leader>n :buffers<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
 
-let mapleader=","
 
 " A way for switching relative numbers with a single map.
 nmap <C-R> :set invrelativenumber<CR>
@@ -81,6 +81,19 @@ map <Leader>n :bnext<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
 map <Leader>c :bd<CR>
+nnoremap <Leader>U :UndotreeShow<CR>
+
+" Manage easeir windows actions
+nnoremap <Leader>h :wincmd h <CR>
+nnoremap <Leader>j :wincmd j <CR>
+nnoremap <Leader>k :wincmd k <CR>
+nnoremap <Leader>l :wincmd l <CR>
+nnoremap <silent> <Leader><C-p> :wincmd p <CR>
+nnoremap <silent> <Leader><C-s> :wincmd s <CR>
+nnoremap <silent> <Leader><C-v> :wincmd v <CR>
+nnoremap <silent> <Leader><C-n> :wincmd n <CR>
+nnoremap <silent> <Leader>+ :vertical resize +5<CR>
+nnoremap <silent> <Leader>- :vertical reize -5<CR>
 
 " Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
 function DeleteHiddenBuffers()

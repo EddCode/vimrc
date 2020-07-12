@@ -1,0 +1,9 @@
+{
+  "suggest.echodocSupport": true,
+  "suggest.maxCompleteItemCount": 20,
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "go", "typescriptreact", "json", "javascriptreact"],
+  "eslint.filetypes": ["javascript", "go", "javascriptreact"],
+  "diagnostic.errorSign": "•",
+  "diagnostic.warningSign": "•",
+  "diagnostic.infoSign": "•"
+}
