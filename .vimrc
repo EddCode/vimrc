@@ -62,19 +62,30 @@ set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
-set autoread			" refreshing file
+set autoread		" refreshing file
+set colorcolumn=120
 
 let mapleader=","
 
+" ------Standard Bindings------
 " Shortcuts for switching the buffers
 map <Leader>n :buffers<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
 
-
 " A way for switching relative numbers with a single map.
-nmap <C-R> :set invrelativenumber<CR>
-imap <C-R> <ESC>:set invrelativenumber<CR>a
+nmap <silent> <F5> :set invrelativenumber<CR>
+imap <silent> <F5> <ESC>:set invrelativenumber<CR>a
+
+" Basic file system commands
+nnoremap <A-o> :!touch<Space>
+nnoremap <A-e> :!crf<Space>
+nnoremap <A-d> :!mkdir<Space>
+nnoremap <A-m> :!mv<Space>%<Space>
+
+" Enable and disable auto comment
+map <C-c> :setlocal formatoptions-=cro<CR>
+map <leader>C :setlocal formatoptions=cro<CR>
 
 " Shorcuts for swu=itching the buffers
 map <Leader>n :bnext<CR>
@@ -84,10 +95,10 @@ map <Leader>c :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
 
 " Manage easeir windows actions
-nnoremap <Leader>h :wincmd h <CR>
-nnoremap <Leader>j :wincmd j <CR>
-nnoremap <Leader>k :wincmd k <CR>
-nnoremap <Leader>l :wincmd l <CR>
+map ah <C-w>h
+map aj <C-w>j
+map ak <C-w>k
+map al <C-w>l
 nnoremap <silent> <Leader><C-p> :wincmd p <CR>
 nnoremap <silent> <Leader><C-s> :wincmd s <CR>
 nnoremap <silent> <Leader><C-v> :wincmd v <CR>

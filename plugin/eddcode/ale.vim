@@ -25,7 +25,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 	\ 'javascript': ['prettier', 'eslint'],
 	\ 'javascriptreact': ['prettier', 'eslint'],
-	\ 'go': ['gopls'],
+	\ 'go': ['gofmt'],
 	\ 'yaml': ['prettier'],
 	\ 'css': ['prettier']
 	\ }
