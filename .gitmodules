@@ -44,3 +44,6 @@
 [submodule "pack/eddcode/start/vim-closetag"]
 	path = pack/eddcode/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
+[submodule "pack/eddcode/start/nerdtree-git"]
+	path = pack/eddcode/start/nerdtree-git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
