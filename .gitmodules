@@ -26,9 +26,6 @@
 	path = pack/eddcode/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim.git
 	branch = release
-[submodule "pack/eddcode/start/emmet-vim"]
-	path = pack/eddcode/start/emmet-vim
-	url = https://github.com/mattn/emmet-vim.git
 [submodule "pack/start/gruvbox"]
 	path = pack/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
@@ -38,9 +35,6 @@
 [submodule "pack/eddcode/start/coc.vim"]
 	path = pack/eddcode/start/coc.vim
 	url = https://github.com/neoclide/coc.nvim.git
-[submodule "pack/eddcode/start/vim-minimap"]
-	path = pack/eddcode/start/vim-minimap
-	url = https://github.com/severin-lemaignan/vim-minimap.git
 [submodule "pack/eddcode/start/gitgutter"]
 	path = pack/eddcode/start/gitgutter
 	url = https://github.com/gitgutter/Vim.git

@@ -43,7 +43,8 @@ set background=dark
 colorscheme gruvbox
 
 " setup cursor
-highlight Cursor guifg=green guibg=black
+set guicursor+=a:ver30-iCursor-blinkwait175-blinkoff150-blinkon175
+highlight Cursor guifg=white guibg=black
 highlight iCursor guifg=white guibg=steelblue
 
 " highlight searchings
@@ -64,6 +65,8 @@ set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 set autoread		" refreshing file
 set colorcolumn=120
+
+highlight ColorColumn ctermbg=lightblue
 
 let mapleader=","
 
@@ -95,14 +98,14 @@ map <Leader>c :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
 
 " Manage easeir windows actions
-map ah <C-w>h
-map aj <C-w>j
-map ak <C-w>k
-map al <C-w>l
-nnoremap <silent> <Leader><C-p> :wincmd p <CR>
-nnoremap <silent> <Leader><C-s> :wincmd s <CR>
-nnoremap <silent> <Leader><C-v> :wincmd v <CR>
-nnoremap <silent> <Leader><C-n> :wincmd n <CR>
+map <Leader>wh <C-w>h
+map <Leader>wj <C-w>j
+map <Leader>wk <C-w>k
+map <Leader>wl <C-w>l
+nnoremap <silent> <Leader>wp :wincmd p <CR>
+nnoremap <silent> <Leader>ws :wincmd s <CR>
+nnoremap <silent> <Leader>wv :wincmd v <CR>
+nnoremap <silent> <Leader>wn :wincmd n <CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical reize -5<CR>
 
