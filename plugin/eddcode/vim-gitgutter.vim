@@ -1,3 +1,5 @@
+let g:gitgutter_enabled=1
+
 nmap <Leader>hn <Plug>GitGutterNextHunk
 nmap <Leader>hp <Plug>GitGutterPrevHunk
 nmap <Leader>ha <Plug>GitGutterStageHunk

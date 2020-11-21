@@ -7,13 +7,6 @@ set nowritebackup
 " Give more space for displaying messages.
 set cmdheight=2
 
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=300
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
 " Enable filetype
 filetype indent plugin on
 
@@ -23,7 +16,8 @@ set undodir=~/.vim/undodir
 
 " Modify indenting settings
 set autoindent              " autoindent always ON.
-set wrap 		    	" wrap line if it`s larger
+set wrap 		    " wrap line if it`s larger
+
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
 set guifont=Fira_Code_Nerd_Font:11
@@ -32,7 +26,6 @@ set hidden
 
 " Make statusline appear even with only single window.
 set laststatus=1
-
 
 " ==========
 "  Colors
