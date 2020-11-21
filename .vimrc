@@ -64,11 +64,6 @@ highlight ColorColumn ctermbg=lightblue
 let mapleader=","
 
 " ------Standard Bindings------
-" Shortcuts for switching the buffers
-map <Leader>n :buffers<CR>
-map <Leader>p :bprev<CR>
-map <Leader>b :buffers<CR>
-
 " A way for switching relative numbers with a single map.
 nmap <silent> <F5> :set invrelativenumber<CR>
 imap <silent> <F5> <ESC>:set invrelativenumber<CR>a
@@ -83,7 +78,7 @@ nnoremap <A-m> :!mv<Space>%<Space>
 map <C-c> :setlocal formatoptions-=cro<CR>
 map <leader>C :setlocal formatoptions=cro<CR>
 
-" Shorcuts for swu=itching the buffers
+" Shorcuts for switching buffers
 map <Leader>n :bnext<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
