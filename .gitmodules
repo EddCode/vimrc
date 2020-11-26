@@ -4,9 +4,6 @@
 [submodule "pack/eddcode/start/nerdtree"]
 	path = pack/eddcode/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "pack/eddcode/start/vim-polyglot"]
-	path = pack/eddcode/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot
 [submodule "pack/nvim/opt/vim-hug-neovim-rpc"]
 	path = pack/nvim/opt/vim-hug-neovim-rpc
 	url = https://github.com/roxma/vim-hug-neovim-rpc

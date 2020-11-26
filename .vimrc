@@ -30,7 +30,8 @@ set laststatus=1
 " ==========
 "  Colors
 " ==========
-syntax on
+syntax enable
+set redrawtime=10000
 set t_Co=256
 set background=dark 
 colorscheme gruvbox
@@ -97,6 +98,32 @@ nnoremap <silent> <Leader>wn :wincmd n <CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical reize -5<CR>
 
+" auto closing characters
+inoremap {      {}<Left>
+inoremap {<CR>  {<CR>}<Esc>O
+inoremap {{     {
+inoremap {}     {}
+
+inoremap (      ()<Left>
+inoremap (<CR>  (<CR>)<Esc>O
+inoremap ((     (
+inoremap ()     ()
+
+inoremap '      ''<Left>
+inoremap '<CR>  '<CR>'<Esc>O
+inoremap ''     '
+inoremap ''     ''
+
+inoremap `      ``<Left>
+inoremap `<CR>  `<CR>`<Esc>O
+inoremap ``     `
+inoremap ``     ``
+
+inoremap "      ""<Left>
+inoremap "<CR>  "<CR>"<Esc>O
+inoremap ""     "
+inoremap ""     ""
+
 " Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
 function DeleteHiddenBuffers()
     let tpbl=[]
@@ -105,3 +132,16 @@ function DeleteHiddenBuffers()
         silent execute 'bwipeout' buf
     endfor
 endfunction
+
+let b:c_minlines = 10000
+
+if exists("c_minlines")
+  let b:c_minlines = c_minlines
+else
+  if !exists("c_no_if0")
+    let b:c_minlines = 50 " #if 0 constructs can be long
+  else
+    let b:c_minlines = 15 " mostly for () constructs
+  endif
+endif
+exec "syn sync ccomment cComment minlines=" . b:c_minlines

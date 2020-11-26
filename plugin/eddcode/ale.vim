@@ -2,7 +2,6 @@
 let g:ale_linters_explicit = 1
 let g:ale_sing_error = '❌'
 let g:ale_sing_warning = '⚠️'
-let g:ale_completion_tsserver_autoimport = 1
 
 " linter setting
 let g:ale_lint_on_text_changed = 'never'
