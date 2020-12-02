@@ -1,7 +1,7 @@
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
-let g:ale_sing_error = '❌'
-let g:ale_sing_warning = '⚠️'
+let g:ale_sing_error = 'x'
+let g:ale_sing_warning = '!'
 
 " linter setting
 let g:ale_lint_on_text_changed = 'never'
