@@ -62,7 +62,7 @@ set colorcolumn=120
 
 highlight ColorColumn ctermbg=lightblue
 
-let mapleader=","
+let mapleader=" "
 
 " ------Standard Bindings------
 " A way for switching relative numbers with a single map.
