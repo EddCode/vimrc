@@ -34,7 +34,7 @@ syntax enable
 set redrawtime=10000
 set t_Co=256
 set background=dark 
-colorscheme gruvbox
+colorscheme elly
 
 " setup cursor
 set guicursor+=a:ver30-iCursor-blinkwait175-blinkoff150-blinkon175
