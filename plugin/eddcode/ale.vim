@@ -19,8 +19,10 @@ let g:ale_linters = {
 	\ 'go': ['gopls', 'golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
-	\ 'css': ['stylelint']
+	\ 'css': ['stylelint'],
+	\ 'dart': ['dartanalyzer']
 	\ }
+
 let g:ale_fixers = {
 	\ 'javascript': ['prettier', 'eslint'],
 	\ 'javascriptreact': ['prettier', 'eslint'],
