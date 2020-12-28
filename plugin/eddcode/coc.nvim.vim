@@ -1,12 +1,12 @@
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 "
 " === COC COMPLETE
-let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-flutter',	'coc-go']
+let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-flutter', 'coc-go']
 
 " COC TAB FUNCTIONS
-inoremap <silent><expr> <TAB>      
+inoremap <silent><expr> <TAB>
 	\ pumvisible() ? "\<C-n>" :
-	\ <SID>check_back_space() ? "\<TAB>" : 
+	\ <SID>check_back_space() ? "\<TAB>" :
 	\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
@@ -69,9 +69,9 @@ augroup end
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
-" Remap for do codeAction of current line  
-nmap <leader>ac <Plug>(coc-codeaction) 
-" Fix autofix problem of current line  
+" Remap for do codeAction of current line
+nmap <leader>ac <Plug>(coc-codeaction)
+" Fix autofix problem of current line
 nmap <leader>qf <Plug>(coc-fix-current)
 
 " Create mappings for function text object, requires document symbols feature of languageserver.
