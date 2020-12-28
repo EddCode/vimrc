@@ -1,16 +1,7 @@
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 "
 " === COC COMPLETE
-let g:coc_global_extensions=[
-	'coc-css', 
-	'coc-html', 
-	'coc-prettier', 
-	'coc-emmet', 
-	'coc-tsserver', 
-	'coc-snippets', 
-	'coc-flutter-tools',
-	'coc-go'
-]
+let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-flutter',	'coc-go']
 
 " COC TAB FUNCTIONS
 inoremap <silent><expr> <TAB>      

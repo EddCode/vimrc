@@ -2,15 +2,21 @@
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
   "coc.preferences.formatOnSaveFiletypes": [
-    "typescript",
     "javascript",
     "go",
-    "typescriptreact",
     "json",
-    "javascriptreact"
+    "javascriptreact",
+    "dart"
   ],
-  "eslint.filetypes": ["typescript", "javascript", "go", "javascriptreact"],
-  "diagnostic.errorSign": "•",
-  "diagnostic.warningSign": "•",
-  "diagnostic.infoSign": "•"
+  "eslint.filetypes": ["javascript", "go", "javascriptreact", "dart"],
+  "diagnostic.errorSign": "ˣ",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "ℹ",
+  "languageserver": {
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    }
+  }
 }
