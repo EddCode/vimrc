@@ -56,6 +56,3 @@
 [submodule "pack/eddcode/start/editorconfig.vim"]
 	path = pack/eddcode/start/editorconfig.vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "pack/eddcode/start/coc-flutter-tools"]
-	path = pack/eddcode/start/coc-flutter-tools
-	url = https://github.com/theniceboy/coc-flutter-tools.git
