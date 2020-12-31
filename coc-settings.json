@@ -18,5 +18,11 @@
       "filetypes": ["dockerfile"],
       "args": ["--stdio"]
     }
-  }
+  },
+  "flutter.UIPath": true,
+  "flutter.enabled": true,
+  "flutter.provider.enableSnippet": true,
+  "flutter.lsp.initialization.closingLabels": true,
+  "flutter.outlineWidth": 30,
+  "flutter.outlineIconPadding": 0
 }
