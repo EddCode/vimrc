@@ -33,7 +33,7 @@ set laststatus=1
 syntax enable
 set redrawtime=10000
 set t_Co=256
-set background=dark 
+set background=dark
 colorscheme gruvbox
 
 " setup cursor
@@ -96,7 +96,7 @@ nnoremap <silent> <Leader>ws :wincmd s <CR>
 nnoremap <silent> <Leader>wv :wincmd v <CR>
 nnoremap <silent> <Leader>wn :wincmd n <CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical reize -5<CR>
+nnoremap <silent> <Leader>- :vertical resize -5<CR>
 
 " auto closing characters
 inoremap {      {}<Left>

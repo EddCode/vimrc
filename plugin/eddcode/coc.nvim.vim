@@ -1,7 +1,7 @@
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 "
 " === COC COMPLETE
-let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-flutter', 'coc-go']
+let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-go', 'coc-flutter-tools']
 
 " COC TAB FUNCTIONS
 inoremap <silent><expr> <TAB>
@@ -37,6 +37,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+nmap <leader>fr :CocCommand flutter.run <CR>
 
 " Use D to show documentation in preview window
 nnoremap <silent> D :call <SID>show_documentation()<CR>
