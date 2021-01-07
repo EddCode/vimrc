@@ -59,3 +59,6 @@
 [submodule "pack/eddcode/start/dart-vim"]
 	path = pack/eddcode/start/dart-vim
 	url = https://github.com/dart-lang/dart-vim-plugin.git
+[submodule "pack/eddcode/start/vim-jsdoc"]
+	path = pack/eddcode/start/vim-jsdoc
+	url = https://github.com/heavenshell/vim-jsdoc.git

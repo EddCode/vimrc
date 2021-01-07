@@ -1,7 +1,9 @@
 " Only run linters named in ale_linters settings.
 let g:ale_linters_explicit = 1
-let g:ale_sing_error = 'ˣ'
-let g:ale_sing_warning = '⚠'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
 " linter setting
 let g:ale_lint_on_text_changed = 'never'
@@ -15,7 +17,7 @@ let g:ale_fix_on_save = 1
 let g:ale_linters_explicit = 1
 let g:ale_linters = {
 	\ 'javascript': ['eslint'],
-	\ 'javascriptreact': ['standard'],
+	\ 'javascriptreact': ['eslint'],
 	\ 'go': ['gopls', 'golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
@@ -24,8 +26,8 @@ let g:ale_linters = {
 	\ }
 
 let g:ale_fixers = {
-	\ 'javascript': ['prettier', 'standard'],
-	\ 'javascriptreact': ['prettier', 'standard'],
+	\ 'javascript': ['prettier', 'eslint'],
+	\ 'javascriptreact': ['prettier', 'eslint'],
 	\ 'go': ['gofmt'],
 	\ 'yaml': ['prettier'],
 	\ 'css': ['prettier']
