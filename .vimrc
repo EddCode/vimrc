@@ -97,6 +97,7 @@ nnoremap <silent> <Leader>wv :wincmd v <CR>
 nnoremap <silent> <Leader>wn :wincmd n <CR>
 nnoremap <silent> <Leader>+ :vertical resize +5<CR>
 nnoremap <silent> <Leader>- :vertical resize -5<CR>
+nnoremap <silent> <Leader>wq <C-w>q <CR>
 
 " auto closing characters
 inoremap {      {}<Left>

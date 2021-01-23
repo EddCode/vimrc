@@ -1,7 +1,8 @@
 " https://github.com/neoclide/coc.nvim#example-vim-configuration
 "
 " === COC COMPLETE
-let g:coc_global_extensions=['coc-css', 'coc-prettier', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-go', 'coc-flutter-tools']
+
+let g:coc_global_extensions=['coc-css', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-go']
 
 " COC TAB FUNCTIONS
 inoremap <silent><expr> <TAB>
@@ -9,6 +10,8 @@ inoremap <silent><expr> <TAB>
 	\ <SID>check_back_space() ? "\<TAB>" :
 	\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+let g:coc_snippet_next = "<tab>"
 
 function! s:check_back_space() abort
    let col = col('.') - 1
