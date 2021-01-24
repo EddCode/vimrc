@@ -3,16 +3,9 @@
   "suggest.maxCompleteItemCount": 20,
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "go", "dart"],
   "eslint.filetypes": ["javascript", "go", "javascriptreact", "dart"],
-  "diagnostic.errorSign": "ˣ",
-  "diagnostic.warningSign": "⚠",
-  "diagnostic.infoSign": "ℹ",
-  "languageserver": {
-    "dockerfile": {
-      "command": "docker-langserver",
-      "filetypes": ["dockerfile"],
-      "args": ["--stdio"]
-    }
-  },
+  "diagnostic.errorSign": "😑",
+  "diagnostic.warningSign": "🥴",
+  "diagnostic.infoSign": "🧐",
   "flutter.UIPath": true,
   "flutter.enabled": true,
   "flutter.provider.enableSnippet": true,
