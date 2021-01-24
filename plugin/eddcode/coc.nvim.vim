@@ -63,8 +63,8 @@ function! s:show_documentation()
   endif
 endfunction
 
-autocmd CursorHoldI * :call <SID>show_documentation()
-autocmd CursorHold * :call <SID>show_documentation()
+"autocmd CursorHoldI * :call <SID>show_documentation()
+"autocmd CursorHold * :call <SID>show_documentation()
 
   " Remap for rename current word
  nmap <rn> <Plug>(coc-rename)
