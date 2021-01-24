@@ -2,7 +2,16 @@
 "
 " === COC COMPLETE
 
-let g:coc_global_extensions=['coc-css', 'coc-emmet', 'coc-tsserver', 'coc-snippets', 'coc-go']
+let g:coc_global_extensions=[
+	\ 'coc-css',
+	\ 'coc-emmet',
+	\ 'coc-pairs',
+	\ 'coc-tsserver',
+	\ 'coc-snippets',
+	\ 'coc-go',
+	\ 'coc-vimlsp',
+	\ 'coc-ultisnips'
+	\]
 
 " COC TAB FUNCTIONS
 inoremap <silent><expr> <TAB>
@@ -54,6 +63,8 @@ function! s:show_documentation()
   endif
 endfunction
 
+autocmd CursorHoldI * :call <SID>show_documentation()
+autocmd CursorHold * :call <SID>show_documentation()
 
   " Remap for rename current word
  nmap <rn> <Plug>(coc-rename)
@@ -86,6 +97,9 @@ xmap af <Plug>(coc-funcobj-a)
 omap if <Plug>(coc-funcobj-i)
 omap af <Plug>(coc-funcobj-a)
 
+noremap <silent> <leader>d :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <leader>s :<C-u>CocList -I symbols<cr>
+
 " Use `:Format` to format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
@@ -98,3 +112,20 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 " Add status line support, for integration with other plugin, checkout `:h coc-status`
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet))))))
