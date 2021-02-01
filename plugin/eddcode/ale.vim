@@ -32,8 +32,8 @@ let g:ale_fixers = {
 noremap <F6> <Plug>(ale_fix)
 
 " MAPING TO NAVIGATE THROW ERROR AND WARNINGS
-nnoremap <silent> [c <Plug>(ale_previous_wrap)
-nnoremap <silent> ]c <Plug>(ale_next_wrap)
+nnoremap <silent> [a <Plug>(ale_previous_wrap)
+nnoremap <silent> ]a <Plug>(ale_next_wrap)
 
 
 "packloadall

@@ -58,7 +58,6 @@ set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
 set autoread		" refreshing file
-set colorcolumn=120
 
 highlight ColorColumn ctermbg=lightblue
 
@@ -86,29 +85,29 @@ map <Leader>b :buffers<CR>
 map <Leader>c :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
 
+" ==============================
 " Manage easeir windows actions
+" ==============================
+"
+" Move through the windows
 map <Leader>wh <C-w>h
 map <Leader>wj <C-w>j
 map <Leader>wk <C-w>k
 map <Leader>wl <C-w>l
-nnoremap <silent> <Leader>wp :wincmd p <CR>
-nnoremap <silent> <Leader>ws :wincmd s <CR>
-nnoremap <silent> <Leader>wv :wincmd v <CR>
-nnoremap <silent> <Leader>wn :wincmd n <CR>
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+
+" ==> resize horizontal windows
+map <Leader>w+ <C-w>5+
+map <Leader>w- <C-w>5-
+" ==> resize vertical windows
+map <Leader>w< <C-w>5<
+map <Leader>w> <C-w>5>
+" ==> resize equal windows
+map <Leader>w= <C-w> =
+" ==> split windows
+nmap <Leader>ws :sp <CR>
+nmap <Leader>wv :vsp <CR>
+
 nnoremap <silent> <Leader>wq <C-w>q <CR>
-
-" auto closing characters
-inoremap {      {}<Left>
-inoremap {<CR>  {<CR>}<Esc>O
-inoremap {{     {
-inoremap {}     {}
-
-inoremap (      ()<Left>
-inoremap (<CR>  (<CR>)<Esc>O
-inoremap ((     (
-inoremap ()     ()
 
 " Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
 function DeleteHiddenBuffers()
