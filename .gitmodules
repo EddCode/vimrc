@@ -65,3 +65,6 @@
 [submodule "pack/eddcode/start/vim-jsx"]
 	path = pack/eddcode/start/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "pack/theme/start/vim-elly"]
+	path = pack/theme/start/vim-elly
+	url = https://github.com/ulwlu/elly.vim.git

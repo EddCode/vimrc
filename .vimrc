@@ -34,7 +34,13 @@ syntax enable
 set redrawtime=10000
 set t_Co=256
 set background=dark
-colorscheme sonokai
+colorscheme elly
+set termguicolors
+
+let g:airline_theme='elly'
+let g:lightline = {
+	\'colorscheme': 'elly',
+      	\}
 
 " setup cursor
 set guicursor+=a:ver30-iCursor-blinkwait175-blinkoff150-blinkon175
