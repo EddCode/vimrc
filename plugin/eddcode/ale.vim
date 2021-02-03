@@ -8,7 +8,7 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=172
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
 let g:ale#statusline#Count = 1
 let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 1
+"let g:ale_fix_on_save = 0
 
 let g:ale_linters = {
 	\ 'javascript': ['eslint'],
