@@ -24,17 +24,17 @@ let g:ale_fixers = {
 	\ 'javascript': ['prettier', 'eslint'],
 	\ 'javascriptreact': ['prettier', 'eslint'],
 	\ 'go': ['gofmt'],
+	\ 'python': ['isort', 'yapf', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
 	\ 'css': ['prettier']
 	\ }
 
 " MAPING :ALEFix
-noremap <F6> <Plug>(ale_fix)
+nnoremap <silent> ]f :ALEFix<CR>
 
 " MAPING TO NAVIGATE THROW ERROR AND WARNINGS
-nnoremap <silent> [a <Plug>(ale_previous_wrap)
-nnoremap <silent> ]a <Plug>(ale_next_wrap)
-
+nnoremap <silent> [c :ALEPreviousWrap <CR>
+nnoremap <silent> ]c :ALENextWrap <CR>
 
 "packloadall
 " Load all of the helptags now, after plugins have been loaded.

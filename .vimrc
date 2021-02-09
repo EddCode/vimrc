@@ -3,6 +3,7 @@ set history=1000            " increase history size
 set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 set nowritebackup
+set redrawtime=10000
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -31,16 +32,11 @@ set laststatus=1
 "  Colors
 " ==========
 syntax enable
-set redrawtime=10000
 set t_Co=256
-set background=dark
-colorscheme elly
-set termguicolors
-
-let g:airline_theme='elly'
-let g:lightline = {
-	\'colorscheme': 'elly',
-      	\}
+set background=light
+colorscheme PaperColor
+let g:airline_theme='papercolor'
+let g:lightline = { 'colorscheme': 'PaperColor' }
 
 " setup cursor
 set guicursor+=a:ver30-iCursor-blinkwait175-blinkoff150-blinkon175
@@ -82,7 +78,7 @@ nnoremap <A-m> :!mv<Space>%<Space>
 
 " Enable and disable auto comment
 map <C-c> :setlocal formatoptions-=cro<CR>
-map <leader>C :setlocal formatoptions=cro<CR>
+map <Leader>c :setlocal formatoptions=cro<CR>
 
 " Shorcuts for switching buffers
 map <Leader>n :bnext<CR>

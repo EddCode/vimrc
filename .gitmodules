@@ -59,12 +59,12 @@
 [submodule "pack/eddcode/start/dart-vim"]
 	path = pack/eddcode/start/dart-vim
 	url = https://github.com/dart-lang/dart-vim-plugin.git
-[submodule "pack/eddcode/start/vim-jsdoc"]
-	path = pack/eddcode/start/vim-jsdoc
-	url = https://github.com/heavenshell/vim-jsdoc.git
-[submodule "pack/eddcode/start/vim-jsx"]
-	path = pack/eddcode/start/vim-jsx
-	url = https://github.com/mxw/vim-jsx.git
 [submodule "pack/theme/start/vim-elly"]
 	path = pack/theme/start/vim-elly
 	url = https://github.com/ulwlu/elly.vim.git
+[submodule "pack/theme/start/dracula"]
+	path = pack/theme/start/dracula
+	url = https://github.com/dracula/vim.git
+[submodule "pack/theme/start/vim-polyglot"]
+	path = pack/theme/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
