@@ -13,7 +13,7 @@ let g:ale_linters_explicit = 1
 let g:ale_linters = {
 	\ 'javascript': ['eslint'],
 	\ 'javascriptreact': ['eslint'],
-	\ 'go': ['gopls', 'golint'],
+	\ 'go': ['gofmt'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
 	\ 'css': ['stylelint'],
@@ -23,7 +23,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
 	\ 'javascript': ['prettier', 'eslint'],
 	\ 'javascriptreact': ['prettier', 'eslint'],
-	\ 'go': ['gofmt'],
+	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['isort', 'yapf', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
 	\ 'css': ['prettier']
