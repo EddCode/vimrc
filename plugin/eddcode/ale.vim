@@ -33,8 +33,8 @@ let g:ale_fixers = {
 nnoremap <silent> ]f :ALEFix<CR>
 
 " MAPING TO NAVIGATE THROW ERROR AND WARNINGS
-nnoremap <silent> [c :ALEPreviousWrap <CR>
-nnoremap <silent> ]c :ALENextWrap <CR>
+nnoremap <silent> [a :ALEPreviousWrap <CR>
+nnoremap <silent> ]a :ALENextWrap <CR>
 
 "packloadall
 " Load all of the helptags now, after plugins have been loaded.
