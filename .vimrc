@@ -33,6 +33,7 @@ set laststatus=1
 " ==========
 syntax enable
 set t_Co=256
+set redrawtime=10000
 set background=light
 colorscheme PaperColor
 let g:airline_theme='papercolor'
@@ -108,6 +109,11 @@ map <Leader>w= <C-w> =
 " ==> split windows
 nmap <Leader>ws :sp <CR>
 nmap <Leader>wv :vsp <CR>
+
+nnoremap <Leader>wS :new<CR>
+nnoremap <Leader>wV :vnew<CR>
+nnoremap <Leader>wn :wincmd w<CR>
+nnoremap <Leader>wc :close<CR>
 
 nnoremap <silent> <Leader>wq <C-w>q <CR>
 
