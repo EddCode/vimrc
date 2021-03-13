@@ -1,4 +1,3 @@
-nmap <leader>gs :G<CR>
 
 nmap <leader>ggf :diffget //2<CR>
 nmap <leader>ggh :diffget //3<CR>
@@ -10,4 +9,5 @@ nmap <leader>gu :diffupdate<CR>
 nnoremap <Leader>G :G<cr>
 nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
+nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gc :Gcommit<CR>

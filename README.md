@@ -11,14 +11,14 @@ This plugins use git-submodules to version-control.
 	```
 
 -  Now you must to create a Symlink to `.vim` and `.vimrc`:
-	
+
 	```bash
 	 $ ln -sf reponame ~/.vim
 	 $ ln -sf reponame/vimrc ~/.vimrc
 	```
 
 ### Installing plugins
-To install more plugins if you need (say always-loaded `foo` and optionally-loaded `bar`, located at `https://github.com/manasthakur/foo` and `https://github.com/manasthakur/bar`, respectively) 
+To install more plugins if you need (say always-loaded `foo` and optionally-loaded `bar`, located at `https://github.com/manasthakur/foo` and `https://github.com/manasthakur/bar`, respectively)
 using Vim 8's package feature:
 
 ```bash
@@ -55,4 +55,4 @@ $ git submodule foreach git pull origin master
 This vim settings use [VimDevicons](https://github.com/ryanoasis/vim-devicons) to show icons in vim, however weather you wanted show icons
 you need [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts), 'Couse it works with patched fonts
 
-> See [configuration Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#font-installation) for more information 
+> See [configuration Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#font-installation) for more information
