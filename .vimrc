@@ -16,7 +16,8 @@ set undofile
 set undodir=~/.vim/undodir
 
 " Modify indenting settings
-set autoindent              " autoindent always ON.
+set autoindent  " autoindent always ON.
+set smartindent
 set wrap 		    " wrap line if it`s larger
 
 " Modify some other settings about files
@@ -35,14 +36,7 @@ syntax enable
 set t_Co=256
 set redrawtime=10000
 set background=light
-colorscheme PaperColor
-let g:airline_theme='papercolor'
-let g:lightline = { 'colorscheme': 'PaperColor' }
-
-" setup cursor
-set guicursor+=a:ver30-iCursor-blinkwait175-blinkoff150-blinkon175
-highlight Cursor guifg=white guibg=black
-highlight iCursor guifg=white guibg=steelblue
+colorscheme papercolor
 
 " highlight searchings
 set incsearch
@@ -56,11 +50,15 @@ set noshowmode
 set wildmenu            " enable visual wildmenu
 
 set showcmd
-set nowrap              " don't wrap long lines
 set number              " show line numbers
 set relativenumber      " show numbers as relative by default
 set showmatch           " higlight matching parentheses and brackets
-set autoread		" refreshing file
+set autoread		        " refreshing file
+set cursorline          " highlight current line
+set visualbell          " blink cursor on error, instead of beeping
+set ruler               " show line and column number of the cursor on right side of statusline
+set showmatch           " highlight matching parentheses / brackets [{()}]
+set lazyredraw          " redraw screen only when we need to
 
 highlight ColorColumn ctermbg=lightblue
 

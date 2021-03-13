@@ -6,4 +6,8 @@ nmap <leader>gpc :diffput //1<CR>
 nmap <leader>gph :diffput //3<CR>
 nmap <leader>gd :Gvdiffsplit!<CR>
 nmap <leader>gu :diffupdate<CR>
-nmap <leader>gc :Gcommit<CR>
+
+nnoremap <Leader>G :G<cr>
+nnoremap <Leader>gp :Gpush<cr>
+nnoremap <Leader>gl :Gpull<cr>
+nnoremap <leader>gc :Gcommit<CR>
