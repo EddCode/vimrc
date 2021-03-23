@@ -6,6 +6,7 @@ set nowritebackup
 set redrawtime=10000
 let mapleader=" "
 
+
 " Give more space for displaying messages.
 set cmdheight=2
 
@@ -36,7 +37,7 @@ set laststatus=1
 syntax enable
 set t_Co=256
 set redrawtime=10000
-set background=light
+set background=dark
 colorscheme papercolor
 
 " highlight searchings
@@ -145,8 +146,9 @@ nnoremap <Leader>wS :new<CR>
 nnoremap <Leader>wV :vnew<CR>
 nnoremap <Leader>wn :wincmd w<CR>
 
-" ============
-" Run NodeJs
-" ============
+" =======================
+" Run NodeJs & Golang
+" =======================
 " run current file
-nnoremap <Leader>x :!node %<cr>
+nnoremap <Leader>xn :!node %<cr>
+nnoremap <Leader>xg :!go run  %<cr>

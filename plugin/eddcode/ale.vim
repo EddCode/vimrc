@@ -21,7 +21,7 @@ let g:ale_linters = {
 	\ }
 
 let g:ale_fixers = {
-	\ 'javascript': ['prettier', 'eslint'],
+	\ 'javascript': ['eslint'],
 	\ 'javascriptreact': ['prettier', 'eslint'],
 	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['isort', 'yapf', 'add_blank_lines_for_python_control_statements'],
