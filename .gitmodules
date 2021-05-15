@@ -68,3 +68,9 @@
 [submodule "pack/theme/start/vim-polyglot"]
 	path = pack/theme/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+[submodule "pack/eddcode/start/vim-delve"]
+	path = pack/eddcode/start/vim-delve
+	url = https://github.com/sebdah/vim-delve
+[submodule "pack/eddcode/start/identLine"]
+	path = pack/eddcode/start/identLine
+	url = https://github.com/Yggdroot/indentLine.git

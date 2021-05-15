@@ -35,9 +35,9 @@ set laststatus=1
 "  Colors
 " ==========
 syntax enable
+set re=0
 set t_Co=256
-set redrawtime=10000
-set background=dark
+set background=light
 colorscheme papercolor
 
 " highlight searchings
