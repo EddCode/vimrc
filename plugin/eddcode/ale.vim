@@ -10,9 +10,13 @@ let g:ale#statusline#Count = 1
 let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 0
 
+let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
+
 let g:ale_linters = {
 	\ 'javascript': ['eslint'],
 	\ 'javascriptreact': ['eslint'],
+	\ 'typescript': ['tslint'],
+	\ 'typescriptreact': ['eslint'],
 	\ 'go': ['gofmt'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
@@ -22,7 +26,9 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
 	\ 'javascript': ['eslint'],
-	\ 'javascriptreact': ['prettier', 'eslint'],
+	\ 'javascriptreact': ['eslint'],
+	\ 'typescript': ['tslint'],
+	\ 'typescriptreact': ['eslint'],
 	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['isort', 'yapf', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
