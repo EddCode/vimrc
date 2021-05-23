@@ -74,3 +74,6 @@
 [submodule "pack/eddcode/start/identLine"]
 	path = pack/eddcode/start/identLine
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "pack/eddcode/start/identLine.git"]
+	path = pack/eddcode/start/identLine.git
+	url = https://github.com/Yggdroot/indentLine.git
