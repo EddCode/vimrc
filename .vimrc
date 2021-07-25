@@ -20,7 +20,7 @@ set undodir=~/.vim/undodir
 " Modify indenting settings
 set autoindent  " autoindent always ON.
 set smartindent
-set wrap 		    " wrap line if it`s larger
+set nowrap 		    " wrap line if it`s larger
 
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)

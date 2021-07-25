@@ -7,9 +7,12 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=172
 " linter setting
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
 let g:ale#statusline#Count = 1
-let g:ale_linters_explicit = 1
-let g:ale_fix_on_save = 0
+"let g:ale_linters_explicit = 1
+let g:ale_disable_lsp = 1
+let g:ale_list_window_size = 5
+let g:ale_fix_on_save = 01
 
+let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 
 let g:ale_linters = {
@@ -17,7 +20,7 @@ let g:ale_linters = {
 	\ 'javascriptreact': ['eslint'],
 	\ 'typescript': ['tslint'],
 	\ 'typescriptreact': ['eslint'],
-	\ 'go': ['gofmt'],
+	\ 'go': ['golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
 	\ 'css': ['stylelint'],
@@ -41,6 +44,8 @@ nnoremap <silent> ]f :ALEFix<CR>
 " MAPING TO NAVIGATE THROW ERROR AND WARNINGS
 nnoremap <silent> [a :ALEPreviousWrap <CR>
 nnoremap <silent> ]a :ALENextWrap <CR>
+nmap <silent> <C-k> <Plug>ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "packloadall
 " Load all of the helptags now, after plugins have been loaded.
