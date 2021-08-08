@@ -44,7 +44,7 @@ colorscheme papercolor
 set incsearch
 set hlsearch
 set smartcase
-map <C-F> :nohlsearch<CR>
+map <C-S> :nohlsearch<CR>
 
 " Use a specific pipe ch
 "set fillchars+=vert:\┊

@@ -80,3 +80,6 @@
 [submodule "pack/eddcode/start/vimDayNight"]
 	path = pack/eddcode/start/vimDayNight
 	url = https://github.com/nightsense/night-and-day.git
+[submodule "pack/eddcode/start/ctrlsf.vim"]
+	path = pack/eddcode/start/ctrlsf.vim
+	url = https://github.com/dyng/ctrlsf.vim.git
