@@ -4,6 +4,7 @@ set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 set nowritebackup
 set redrawtime=10000
+set ts=4 sts=4 sw=4 noexpandtab
 let mapleader=" "
 
 
@@ -27,6 +28,7 @@ set encoding=utf8          " always use unicode (god damnit, windows)
 set guifont=Fira_Code_Nerd_Font:11
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
+"set invlist
 
 " Make statusline appear even with only single window.
 set laststatus=1
@@ -40,14 +42,18 @@ set t_Co=256
 set background=light
 colorscheme papercolor
 
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
 " highlight searchings
 set incsearch
 set hlsearch
 set smartcase
 map <C-S> :nohlsearch<CR>
 
-" Use a specific pipe ch
-"set fillchars+=vert:\┊
+" Use the same symbols as TextMate for tabstops and EOLs
+set list listchars=tab:┊\ ,eol:¬
 set visualbell
 set noshowmode
 set wildmenu            " enable visual wildmenu
@@ -96,6 +102,8 @@ exec "syn sync ccomment cComment minlines=" . b:c_minlines
 " A way for switching relative numbers with a single map.
 nmap <silent> <F5> :set invrelativenumber<CR>
 imap <silent> <F5> <ESC>:set invrelativenumber<CR>a
+nmap <leader>l :set list!<CR>
+noremap <Leader><Tab><Tab> :set noexpandtab<CR>
 
 " Basic file system commands
 nnoremap <A-o> :!touch<Space>
@@ -119,33 +127,18 @@ nnoremap <Leader>; $a;<Esc>
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wq :wq<CR>
+nnoremap <Leader>e :e!<CR>
 
 " ==============================
 " Manage easeir windows actions
 " ==============================
-"
+
 " Move through the windows
-map <Leader>wh <C-w>h
-map <Leader>wj <C-w>j
-map <Leader>wk <C-w>k
-map <Leader>wl <C-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
-" ==> resize horizontal windows
-map <Leader>w+ <C-w>5+
-map <Leader>w- <C-w>5-
-" ==> resize vertical windows
-map <Leader>w< <C-w>5<
-map <Leader>w> <C-w>5>
-" ==> resize equal windows
-map <Leader>w= <C-w> =
-" ==> split windows
-nmap <Leader>ws :sp <CR>
-nmap <Leader>wv :vsp <CR>
-
-nnoremap <Leader>wS :new<CR>
-nnoremap <Leader>wV :vnew<CR>
-nnoremap <Leader>wn :wincmd w<CR>
 
 " =======================
 " Run NodeJs & Golang
