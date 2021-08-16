@@ -40,12 +40,16 @@ syntax enable
 set re=0
 set t_Co=256
 
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+
+if has('termguicolors')
+	set termguicolors
+endif
+
 set background=light
 
 colorscheme gruvbox-material
-
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -68,8 +72,8 @@ set relativenumber     " show numbers as relative by default
 set showmatch          " higlight matching parentheses and brackets
 set autoread		   " refreshing file
 "set cursorline        " highlight current line
-"set visualbell         " blink cursor on error, instead of beeping
-"set ruler              " show line and column number of the cursor on right side of statusline
+"set visualbell        " blink cursor on error, instead of beeping
+"set ruler             " show line and column number of the cursor on right side of statusline
 set showmatch          " highlight matching parentheses / brackets [{()}]
 set lazyredraw         " redraw screen only when we need to
 
