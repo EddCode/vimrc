@@ -25,7 +25,7 @@ set nowrap 		    " wrap line if it`s larger
 
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
-set guifont=Fira_Code_Nerd_Font:11
+set guifont=Fira_Code_Nerd_Font:12
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 "set invlist
@@ -39,8 +39,13 @@ set laststatus=1
 syntax enable
 set re=0
 set t_Co=256
+
 set background=light
-colorscheme papercolor
+
+colorscheme gruvbox-material
+
+hi Normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -54,22 +59,21 @@ map <C-S> :nohlsearch<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set list listchars=tab:┊\ ,eol:¬
-set visualbell
 set noshowmode
 set wildmenu            " enable visual wildmenu
 
 set showcmd
-set number              " show line numbers
-set relativenumber      " show numbers as relative by default
-set showmatch           " higlight matching parentheses and brackets
-set autoread		        " refreshing file
-set cursorline          " highlight current line
-set visualbell          " blink cursor on error, instead of beeping
-set ruler               " show line and column number of the cursor on right side of statusline
-set showmatch           " highlight matching parentheses / brackets [{()}]
-set lazyredraw          " redraw screen only when we need to
+set number             " show line numbers
+set relativenumber     " show numbers as relative by default
+set showmatch          " higlight matching parentheses and brackets
+set autoread		   " refreshing file
+"set cursorline        " highlight current line
+"set visualbell         " blink cursor on error, instead of beeping
+"set ruler              " show line and column number of the cursor on right side of statusline
+set showmatch          " highlight matching parentheses / brackets [{()}]
+set lazyredraw         " redraw screen only when we need to
 
-highlight ColorColumn ctermbg=lightblue
+"highlight ColorColumn ctermbg=lightblue
 
 " Clean hidden buffers (https://stackoverflow.com/a/8459043/2033517)
 function DeleteHiddenBuffers()

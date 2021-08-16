@@ -31,6 +31,8 @@ Features~
 - Switch back to the original color palette whenever you like.
 - Highly customizable.
 - Rich support for common file types and plugins.
+- Semantic highlighting support.
+- Tree-sitter support.
 - Italic support 🎉
 
 ==============================================================================
@@ -46,6 +48,20 @@ Via Plugin Manager~
 <
     For better syntax highlighting support, please install
     https://github.com/sheerun/vim-polyglot or https://github.com/nvim-treesitter/nvim-treesitter.
+
+------------------------------------------------------------------------------
+
+Via Pack Feature~
+
+    1. Create a new directory: `$ mkdir -p ~/.vim/pack/colors/opt`
+
+    2. Clone this repository: `$ git clone --depth 1 https://github.com/sainnhe/gruvbox-material.git ~/.vim/pack/colors/opt/gruvbox-material`
+
+    3. Generate help tags: `:helptags ~/.vim/pack/colors/opt/gruvbox-material/doc/`
+
+    4. Add `packadd! gruvbox-material` to your vimrc.
+
+Note: If you install this color scheme to `pack/*/start`, you still need to add `packadd! gruvbox-material` to your vimrc. [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
 
 ------------------------------------------------------------------------------
 
@@ -188,9 +204,6 @@ E.g.
 >
     let g:gruvbox_material_disable_italic_comment = 1
 <
-Note: Some terminal emulators don't support italics, which may cause the
-comment color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
-
 ------------------------------------------------------------------------------
                                                 *g:gruvbox_material_enable_bold*
 g:gruvbox_material_enable_bold~
@@ -282,10 +295,38 @@ E.g.
     let g:gruvbox_material_sign_column_background = 'none'
 <
 ------------------------------------------------------------------------------
+                                                *g:gruvbox_material_ui_contrast*
+g:gruvbox_material_ui_contrast~
+
+The contrast of line numbers, indent lines, etc.
+
+    Available values: `'low'`, `'high'`
+    Default value: `'low'`
+
+E.g.
+>
+    let g:gruvbox_material_ui_contrast = 'high'
+<
+------------------------------------------------------------------------------
+                                                   *g:gruvbox_material_show_eob*
+g:gruvbox_material_show_eob~
+
+Whether to show |hl-EndOfBuffer|.
+
+    Available values: `1`, `0`
+    Default value: `1`
+
+E.g.
+>
+    let g:gruvbox_material_show_eob = 0
+<
+------------------------------------------------------------------------------
                                   *g:gruvbox_material_diagnostic_text_highlight*
 g:gruvbox_material_diagnostic_text_highlight~
 
-Whether to highlight the background of error/warning/info/hint text.
+Some plugins support highlighting error/warning/info/hint texts, by default
+these texts are only underlined, but you can use this option to also highlight
+the background of them.
 
     Available values: `0`, `1`
     Default value: `0`
@@ -294,6 +335,16 @@ E.g.
 >
     let g:gruvbox_material_diagnostic_text_highlight = 1
 <
+Currently, the following plugins are supported:
+
+- neovim's built-in language server client
+- https://github.com/neoclide/coc.nvim
+- https://github.com/prabirshrestha/vim-lsp
+- https://github.com/ycm-core/YouCompleteMe
+- https://github.com/dense-analysis/ale
+- https://github.com/neomake/neomake
+- https://github.com/vim-syntastic/syntastic
+
 ------------------------------------------------------------------------------
                                   *g:gruvbox_material_diagnostic_line_highlight*
 g:gruvbox_material_diagnostic_line_highlight~
@@ -314,19 +365,34 @@ Currently, the following plugins are supported:
 - https://github.com/vim-syntastic/syntastic
 
 ------------------------------------------------------------------------------
+                                    *g:gruvbox_material_diagnostic_virtual_text*
+g:gruvbox_material_diagnostic_virtual_text~
+
+Some plugins can use virtual text feature of neovim to display
+error/warning/info/hint information, you can use this option to adjust the
+colors of it.
+
+    Available values: `'grey'`, `'colored'`
+    Default value: `'grey'`
+
+E.g.
+>
+    let g:gruvbox_material_diagnostic_virtual_text = 'colored'
+<
+Currently, the following plugins are supported:
+
+- neovim's built-in language server client
+- https://github.com/neoclide/coc.nvim
+- https://github.com/prabirshrestha/vim-lsp
+- https://github.com/dense-analysis/ale
+- https://github.com/neomake/neomake
+
+------------------------------------------------------------------------------
                                                *g:gruvbox_material_current_word*
 g:gruvbox_material_current_word~
 
 Some plugins can highlight the word under current cursor, you can use this
 option to control their behavior.
-
-Currently support:
-
-- https://github.com/neoclide/coc-highlight
-- https://github.com/dominikduda/vim_current_word
-- https://github.com/RRethy/vim-illuminate
-- https://github.com/itchyny/vim-cursorword
-- https://github.com/prabirshrestha/vim-lsp
 
     Available values: `'grey background'`, `'bold'`, `'underline'`, `'italic'`
     Default value: `'grey background'` when not in transparent mode, `'bold'`
@@ -336,14 +402,27 @@ E.g.
 >
     let g:gruvbox_material_current_word = 'bold'
 <
+Currently, the following plugins are supported:
+
+- https://github.com/neoclide/coc-highlight
+- https://github.com/dominikduda/vim_current_word
+- https://github.com/RRethy/vim-illuminate
+- https://github.com/itchyny/vim-cursorword
+- https://github.com/prabirshrestha/vim-lsp
+
 ------------------------------------------------------------------------------
                                            *g:gruvbox_material_statusline_style*
 g:gruvbox_material_statusline_style~
 
-Determine the style of statusline/airline/lightline. Set this option to
-`'original'` to use the original gruvbox style.
+Determine the style of statusline/airline/lightline.
 
-    Available values: `'default'`, `'original'`
+There are 3 designs for statusline:
+
+- `default`: See the screenshots.
+- `mix`: Combines `default` and `original`.
+- `original`: The design used in the original gruvbox.
+
+    Available values: `'default'`, `'mix'`, `'original'`
     Default value: `'default'`
 
 E.g.
@@ -505,6 +584,13 @@ can enable the color scheme in your vimrc instead of after vim startup.
 
 ------------------------------------------------------------------------------
 
+A lot of errors are detected if I install with pack feature.~
+
+You'll need to add `packadd! gruvbox-material` before applying this color
+scheme. Check [sainnhe/gruvbox-material#60](https://github.com/sainnhe/gruvbox-material/issues/60)
+
+------------------------------------------------------------------------------
+
 I can't apply airline/lightline color scheme.~
 
 The name is `gruvbox_material` instead of `gruvbox-material`. I have to use
@@ -519,6 +605,13 @@ How to enable cursive italic keywords?~
 2. Enable italic keywords in this color scheme: `let g:gruvbox_material_enable_italic = 1`
 
 3. Disable italic comment(optional): `let g:gruvbox_material_disable_italic_comment = 1`
+
+------------------------------------------------------------------------------
+
+The comment color looks weird.~
+
+Some terminal emulators don't support italics, which may cause the comment
+color looks weird. See https://github.com/sainnhe/gruvbox-material/issues/5#issuecomment-729586348
 
 ------------------------------------------------------------------------------
 
