@@ -83,3 +83,6 @@
 [submodule "pack/eddcode/start/ctrlsf.vim"]
 	path = pack/eddcode/start/ctrlsf.vim
 	url = https://github.com/dyng/ctrlsf.vim.git
+[submodule "pack/eddcode/start/scrollstatus.vim"]
+	path = pack/eddcode/start/scrollstatus.vim
+	url = https://github.com/ojroques/vim-scrollstatus.git
