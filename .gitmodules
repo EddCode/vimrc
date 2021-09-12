@@ -26,21 +26,12 @@
 [submodule "pack/eddcode/start/coc.vim"]
 	path = pack/eddcode/start/coc.vim
 	url = https://github.com/neoclide/coc.nvim.git
-[submodule "pack/eddcode/start/gitgutter"]
-	path = pack/eddcode/start/gitgutter
-	url = https://github.com/gitgutter/Vim.git
-[submodule "pack/eddcode/start/vin-fugitive"]
-	path = pack/eddcode/start/vin-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/eddcode/start/vim-closetag"]
 	path = pack/eddcode/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
 [submodule "pack/eddcode/start/nerdtree-git"]
 	path = pack/eddcode/start/nerdtree-git
 	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
-[submodule "pack/eddcode/start/vim-fugitive.git"]
-	path = pack/eddcode/start/vim-fugitive.git
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/eddcode/start/fugitive.git"]
 	path = pack/eddcode/start/fugitive.git
 	url = https://github.com/tpope/vim-fugitive.git
@@ -71,3 +62,6 @@
 [submodule "pack/eddcode/start/scrollstatus.vim"]
 	path = pack/eddcode/start/scrollstatus.vim
 	url = https://github.com/ojroques/vim-scrollstatus.git
+[submodule "pack/nvim/opt/nvim-yarp.vim"]
+	path = pack/nvim/opt/nvim-yarp.vim
+	url = https://github.com/roxma/nvim-yarp.git
