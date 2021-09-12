@@ -127,7 +127,7 @@ map <Leader>c :setlocal formatoptions=cro<CR>
 map <Leader>n :bnext<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
-map <Leader>c :bd<CR>
+map <Leader>d :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
 
 " quick semi
