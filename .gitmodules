@@ -38,9 +38,6 @@
 [submodule "pack/eddcode/start/editorconfig.vim"]
 	path = pack/eddcode/start/editorconfig.vim
 	url = https://github.com/editorconfig/editorconfig-vim.git
-[submodule "pack/eddcode/start/dart-vim"]
-	path = pack/eddcode/start/dart-vim
-	url = https://github.com/dart-lang/dart-vim-plugin.git
 [submodule "pack/theme/start/vim-elly"]
 	path = pack/theme/start/vim-elly
 	url = https://github.com/ulwlu/elly.vim.git
