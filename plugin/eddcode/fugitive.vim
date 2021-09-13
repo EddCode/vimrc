@@ -9,3 +9,4 @@ nnoremap <Leader>gp :Gpush<cr>
 nnoremap <Leader>gl :Gpull<cr>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>gc :Gcommit<CR>
+nnoremap <leader>gr :Grebase -i<CR>
