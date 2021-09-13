@@ -17,11 +17,12 @@ filetype indent plugin on
 " Persist undo history between file editing sessions.
 set undofile
 set undodir=~/.vim/undodir
+set formatoptions=cro
 
 " Modify indenting settings
 set autoindent  " autoindent always ON.
 set smartindent
-set nowrap 		    " wrap line if it`s larger
+set wrap 		    " wrap line if it`s larger
 
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
@@ -127,9 +128,8 @@ map <Leader>c :setlocal formatoptions=cro<CR>
 map <Leader>n :bnext<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
-map <Leader>cb :bd<CR>
+map <Leader>c :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
-
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 
