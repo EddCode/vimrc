@@ -1,5 +1,5 @@
 "File listing
-let g:ctrlp_user_command = 'find %s -type fa'
+"let g:ctrlp_user_command = 'find %s -type fa'
 
 " ignore files
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.DS_Store " MacOSX/Linux
