@@ -154,3 +154,6 @@ map <C-l> <C-w>l
 " run current file
 nnoremap <Leader>xn :!node %<cr>
 nnoremap <Leader>xg :!go run  %<cr>
+
+
+set rtp+=~/.fzf

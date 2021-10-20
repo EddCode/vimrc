@@ -62,15 +62,12 @@
 [submodule "pack/nvim/opt/nvim-yarp.vim"]
 	path = pack/nvim/opt/nvim-yarp.vim
 	url = https://github.com/roxma/nvim-yarp.git
-[submodule "pack/eddcode/start/fzf.vim"]
-	path = pack/eddcode/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/eddcode/start/nerdcommenter.vim"]
 	path = pack/eddcode/start/nerdcommenter.vim
 	url = https://github.com/preservim/nerdcommenter.git
-[submodule "pack/eddcode/start/ctrlsf.vim"]
-	path = pack/eddcode/start/ctrlsf.vim
-	url = https://github.com/dyng/ctrlsf.vim.git
 [submodule "pack/eddcode/start/ctrlp.vim"]
 	path = pack/eddcode/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "pack/eddcode/start/fzf.vim"]
+	path = pack/eddcode/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
