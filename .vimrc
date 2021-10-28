@@ -137,6 +137,23 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>e :e!<CR>
 
+" ==> resize horizontal windows
+map <Leader>w+ <C-w>5+
+map <Leader>w- <C-w>5-
+" ==> resize vertical windows
+map <Leader>w< <C-w>5<
+map <Leader>w> <C-w>5>
+" ==> resize equal windows
+map <Leader>w= <C-w> =
+" ==> split windows
+nmap <Leader>ws :sp <CR>
+nmap <Leader>wv :vsp <CR>
+
+nnoremap <Leader>ws :new<CR>
+nnoremap <Leader>wv :vnew<CR>
+nnoremap <Leader>wn :wincmd w<CR>
+nnoremap <Leader>wc :close<CR>
+
 " ==============================
 " Manage easeir windows actions
 " ==============================

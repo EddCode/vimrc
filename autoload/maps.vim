@@ -38,19 +38,4 @@ map <Leader>wj <C-w>j
 map <Leader>wk <C-w>k
 map <Leader>wl <C-w>l
 
-" ==> resize horizontal windows
-map <Leader>w+ <C-w>5+
-map <Leader>w- <C-w>5-
-" ==> resize vertical windows
-map <Leader>w< <C-w>5<
-map <Leader>w> <C-w>5>
-" ==> resize equal windows
-map <Leader>w= <C-w> =
-" ==> split windows
-nmap <Leader>ws :sp <CR>
-nmap <Leader>wv :vsp <CR>
 
-nnoremap <Leader>wS :new<CR>
-nnoremap <Leader>wV :vnew<CR>
-nnoremap <Leader>wn :wincmd w<CR>
-nnoremap <Leader>wc :close<CR>
