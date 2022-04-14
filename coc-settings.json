@@ -13,6 +13,7 @@
   "flutter.lsp.initialization.closingLabels": true,
   "flutter.outlineWidth": 30,
   "flutter.outlineIconPadding": 0,
+  "javascript.suggestionActions.enabled": false,
   "git.addedSign.hlGroup": "CocDiffAdd",
   "git.changedSign.hlGroup": "CocDiffChange",
   "git.removedSign.hlGroup": "CocDiffDelete",

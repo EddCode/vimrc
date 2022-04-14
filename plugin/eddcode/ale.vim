@@ -7,19 +7,18 @@ highlight ALEWarningSign ctermbg=NONE ctermfg=172
 " linter setting
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
 let g:ale#statusline#Count = 1
-"let g:ale_linters_explicit = 1
+let g:ale_linters_explicit = 1
 let g:ale_disable_lsp = 1
 let g:ale_list_window_size = 5
 let g:ale_fix_on_save = 1
 
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
-let g:ale_linter_aliases = {'typescriptreact': 'typescript'}
 
 let g:ale_linters = {
 	\ 'javascript': ['eslint', 'prettier_eslint'],
-	\ 'javascriptreact': ['eslint', 'prettier_eslint'],
-	\ 'typescript': ['tslint', 'tslint', 'prettier_eslint'],
-	\ 'typescriptreact': ['eslint', 'prettier_eslint'],
+	\ 'javascriptreact': ['eslint'],
+	\ 'typescript': ['eslint', 'tslint', 'prettier_eslint'],
+	\ 'typescriptreact': ['eslint'],
 	\ 'go': ['golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
@@ -30,8 +29,8 @@ let g:ale_linters = {
 let g:ale_fixers = {
 	\ 'javascript': ['eslint', 'prettier_eslint', 'importjs'],
 	\ 'javascriptreact': ['eslint', 'prettier_eslint', 'importjs'],
-	\ 'typescript': ['tslint', 'prettier_eslint'],
-	\ 'typescriptreact': ['eslint', 'prettier_eslint'],
+	\ 'typescript': ['eslint', 'tslint', 'prettier_eslint'],
+	\ 'typescriptreact': ['eslint'],
 	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['isort', 'yapf', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
