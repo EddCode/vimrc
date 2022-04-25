@@ -17,12 +17,11 @@ filetype indent plugin on
 " Persist undo history between file editing sessions.
 set undofile
 set undodir=~/.vim/undodir
-set formatoptions=cro
 
 " Modify indenting settings
 set autoindent  " autoindent always ON.
 set smartindent
-set wrap 		    " wrap line if it`s larger
+set nowrap 		    " wrap line if it`s larger
 
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
@@ -72,8 +71,8 @@ set number             " show line numbers
 set relativenumber     " show numbers as relative by default
 set showmatch          " higlight matching parentheses and brackets
 set autoread		   " refreshing file
-"set cursorline        " highlight current line
-"set visualbell        " blink cursor on error, instead of beeping
+set cursorline        " highlight current line
+set visualbell        " blink cursor on error, instead of beeping
 "set ruler             " show line and column number of the cursor on right side of statusline
 set showmatch          " highlight matching parentheses / brackets [{()}]
 set lazyredraw         " redraw screen only when we need to
@@ -119,10 +118,6 @@ nnoremap <A-o> :!touch<Space>
 nnoremap <A-e> :!crf<Space>
 nnoremap <A-d> :!mkdir<Space>
 nnoremap <A-m> :!mv<Space>%<Space>
-
-" Enable and disable auto comment
-map <C-c> :setlocal formatoptions-=cro<CR>
-map <Leader>c :setlocal formatoptions=cro<CR>
 
 " Shorcuts for switching buffers
 map <Leader>n :bnext<CR>

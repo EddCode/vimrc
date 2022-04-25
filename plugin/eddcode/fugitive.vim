@@ -5,8 +5,8 @@ nmap <leader>gd :Gvdiffsplit!<CR>
 nmap <leader>gu :diffupdate<CR>
 
 nnoremap <Leader>G :G<cr>
-nnoremap <Leader>gp :Gpush<cr>
-nnoremap <Leader>gl :Gpull<cr>
+nnoremap <Leader>gp :Git push<cr>
+nnoremap <Leader>gl :Git pull<cr>
 nnoremap <leader>gb :Git blame<CR>
-nnoremap <leader>gc :Gcommit<CR>
-nnoremap <leader>gr :Grebase -i<CR>
+nnoremap <leader>gc :Git commit<CR>
+nnoremap <leader>gr :Git rebase -i<CR>
