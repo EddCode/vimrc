@@ -49,7 +49,7 @@ endif
 
 set background=light
 
-colorscheme gruvbox-material
+"colorscheme gruvbox-material
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -62,7 +62,7 @@ set smartcase
 map <C-S> :nohlsearch<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set list listchars=tab:┊\ ,eol:¬
+set list listchars=tab:►\ ,eol:¬
 set noshowmode
 set wildmenu            " enable visual wildmenu
 
