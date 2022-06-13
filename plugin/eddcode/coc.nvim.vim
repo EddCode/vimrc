@@ -10,8 +10,7 @@ let g:coc_global_extensions=[
 	\ 'coc-snippets',
 	\ 'coc-go',
 	\ 'coc-vimlsp',
-	\ 'coc-ultisnips',
-	\ 'coc-prettier'
+	\ 'coc-ultisnips'
 	\]
 
 " COC TAB FUNCTIONS
