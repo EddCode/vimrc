@@ -1,6 +1,6 @@
 " Only run linters named in ale_linters settings.
-let g:ale_sign_error = '😡'
-let g:ale_sign_warning = '🥴'
+let g:ale_sign_error = '💩'
+let g:ale_sign_warning = '👎'
 highlight ALEErrorSign ctermbg=NONE ctermfg=161
 highlight ALEWarningSign ctermbg=NONE ctermfg=172
 

@@ -68,3 +68,6 @@
 [submodule "pack/eddcode/start/copilot.vim"]
 	path = pack/eddcode/start/copilot.vim
 	url = https://github.com/github/copilot.vim.git
+[submodule "pack/nvim/opt/markdown.nvim"]
+	path = pack/nvim/opt/markdown.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim.git
