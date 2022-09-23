@@ -21,11 +21,10 @@ set undodir=~/.vim/undodir
 " Modify indenting settings
 set autoindent  " autoindent always ON.
 set smartindent
-set nowrap 		    " wrap line if it`s larger
+set nowrap      " wrap line if it`s larger
 
 " Modify some other settings about files
 set encoding=utf8          " always use unicode (god damnit, windows)
-set guifont=Fira_Code_Nerd_Font:12
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 "set invlist
@@ -49,11 +48,30 @@ endif
 
 set background=light
 
-"colorscheme gruvbox-material
+colorscheme gruvbox-material
+
+function! ChangeBackground()
+  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+    set background=dark   " for dark version of theme
+    colorscheme sonokai
+  else
+    set background=light  " for light version of theme
+    colorscheme PaperColor
+  endif
+
+  try
+    execute "AirlineRefresh"
+  catch
+  endtry
+endfunction
+
+" initialize the colorscheme for the first run
+call ChangeBackground()
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+highlight Comment guifg=red gui=italic
+highlight SpecialKey guifg=#4a4a59 gui=italic
 
 " highlight searchings
 set incsearch

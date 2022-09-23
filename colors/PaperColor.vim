@@ -282,27 +282,24 @@ fun! s:acquire_theme_data()
 
   " Systematic User-Config Options: {{{
   " Example config in .vimrc
-  " let g:PaperColor_Theme_Options = {
-  "       \   'theme': {
-  "       \     'default': {
-  "       \       'allow_bold': 1,
-  "       \       'allow_italic': 0,
-  "       \       'transparent_background': 1
-  "       \     }
-  "       \   },
-  "       \   'language': {
-  "       \     'python': {
-  "       \       'highlight_builtins' : 1
-  "       \     },
-  "       \     'c': {
-  "       \       'highlight_builtins' : 1
-  "       \     },
-  "       \     'cpp': {
-  "       \       'highlight_standard_library': 1
-  "       \     }
-  "       \   }
-  "       \ }
-  "
+  let g:PaperColor_Theme_Options = {
+        \   'theme': {
+        \     'default': {
+        \       'allow_bold': 1,
+        \       'allow_italic': 1,
+        \       'transparent_background': 1,
+        \     }
+        \   },
+        \   'language': {
+        \     'python': {
+        \       'highlight_builtins' : 1
+        \     },
+        \     'go': {
+        \       'highlight_builtins' : 1
+        \     },
+        \   }
+        \ }
+
   let s:options = {}
 
 
@@ -1202,15 +1199,15 @@ fun! s:apply_syntax_highlightings()
   exec 'hi String' . s:fg_olive
   exec 'hi Character' . s:fg_olive
   exec 'hi Number' . s:fg_orange
-  exec 'hi Boolean' . s:fg_green . s:ft_bold
+  exec 'hi Boolean' . s:fg_green . s:ft_italic
   exec 'hi Float' . s:fg_orange
 
   exec 'hi Identifier' . s:fg_navy
   exec 'hi Function' . s:fg_foreground
 
-  exec 'hi Statement' . s:fg_pink . s:ft_none
-  exec 'hi Conditional' . s:fg_purple . s:ft_bold
-  exec 'hi Repeat' . s:fg_purple . s:ft_bold
+  exec 'hi Statement' . s:fg_pink . s:ft_italic
+  exec 'hi Conditional' . s:fg_purple . s:ft_italic_bold
+  exec 'hi Repeat' . s:fg_purple . s:ft_italic_bold
   exec 'hi Label' . s:fg_blue
   exec 'hi Operator' . s:fg_aqua . s:ft_none
   exec 'hi Keyword' . s:fg_blue
@@ -1222,16 +1219,16 @@ fun! s:apply_syntax_highlightings()
   exec 'hi Macro' . s:fg_blue
   exec 'hi PreCondit' . s:fg_aqua
 
-  exec 'hi Type' . s:fg_pink . s:ft_bold
-  exec 'hi StorageClass' . s:fg_navy . s:ft_bold
-  exec 'hi Structure' . s:fg_blue . s:ft_bold
-  exec 'hi Typedef' . s:fg_pink . s:ft_bold
+  exec 'hi Type' . s:fg_pink . s:ft_italic
+  exec 'hi StorageClass' . s:fg_navy . s:ft_italic_bold
+  exec 'hi Structure' . s:fg_blue . s:ft_italic_bold
+  exec 'hi Typedef' . s:fg_pink . s:ft_italic_bold
 
   exec 'hi Special' . s:fg_foreground
   exec 'hi SpecialChar' . s:fg_foreground
   exec 'hi Tag' . s:fg_green
   exec 'hi Delimiter' . s:fg_aqua
-  exec 'hi SpecialComment' . s:fg_comment . s:ft_bold
+  exec 'hi SpecialComment' . s:fg_comment . s:ft_italic
   exec 'hi Debug' . s:fg_orange
 
   exec 'hi Error' . s:fg_error_fg . s:bg_error_bg
@@ -1594,12 +1591,11 @@ fun! s:apply_syntax_highlightings()
 
   " JavaScript Highlighting
   exec 'hi javaScriptBraces' . s:fg_blue
-  exec 'hi javaScriptParens' . s:fg_blue
   exec 'hi javaScriptIdentifier' . s:fg_pink
-  exec 'hi javaScriptFunction' . s:fg_blue . s:ft_bold
+  exec 'hi javaScriptFunction' . s:fg_blue . s:ft_italic_bold
   exec 'hi javaScriptConditional' . s:fg_purple . s:ft_bold
   exec 'hi javaScriptRepeat' . s:fg_purple . s:ft_bold
-  exec 'hi javaScriptBoolean' . s:fg_green . s:ft_bold
+  exec 'hi javaScriptBoolean' . s:fg_green . s:ft_italic
   exec 'hi javaScriptNumber' . s:fg_orange
   exec 'hi javaScriptMember' . s:fg_navy
   exec 'hi javaScriptReserved' . s:fg_navy
