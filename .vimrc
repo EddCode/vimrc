@@ -76,11 +76,11 @@ set smartcase
 map <C-S> :nohlsearch<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set list listchars=tab:►\ ,eol:¬
+set list listchars=tab:►\ ,eol:-
 set noshowmode
 set wildmenu            " enable visual wildmenu
-
 set showcmd
+
 set number             " show line numbers
 set relativenumber     " show numbers as relative by default
 set showmatch          " higlight matching parentheses and brackets
@@ -115,6 +115,33 @@ else
 endif
 exec "syn sync ccomment cComment minlines=" . b:c_minlines
 
+augroup filetypedetect
+  command! -nargs=* -complete=help Help vertical belowright help <args>
+  autocmd FileType help wincmd L
+  
+  autocmd BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
+  
+  autocmd BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4
+  autocmd BufNewFile,BufRead *.md setlocal noet ts=4 sw=4
+  autocmd BufNewFile,BufRead *.vim setlocal expandtab shiftwidth=2 tabstop=2
+  autocmd BufNewFile,BufRead *.sh setlocal expandtab shiftwidth=2 tabstop=2
+  autocmd BufNewFile,BufRead *.fish setlocal expandtab shiftwidth=2 tabstop=2
+  
+  autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
+augroup END
+"=====================================================
+"===================== STATUSLINE ====================
+
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : '#I #W',
+      \'cwin' : '#I #W',
+      \'x'    : '%a',
+      \'y'    : '%Y-%m-%d %H:%M',
+      \'z'    : ' #h',
+      \'options' : {'status-justify' : 'left', 'status-position' : 'bottom'}}
+
+let g:tmuxline_powerline_separators = 0
 
 " ===================
 "   Mapping

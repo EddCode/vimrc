@@ -4,6 +4,19 @@ If you use vim8 you can clone this repo for get a some usefull plugins. You just
 
 This plugins use git-submodules to version-control.
 
+#### Plugins
+* [Ale](https://github.com/dense-analysis/ale)
+* [NeerdTree](https://github.com/scrooloose/nerdtree)
+* [Coc](https://github.com/neoclide/coc.nvim.git)
+* [CloseTags](https://github.com/alvan/vim-closetag.git)
+* [NeerdTree git](https://github.com/Xuyuanp/nerdtree-git-plugin.git)
+* [Nerd Commenter](https://github.com/preservim/nerdcommenter.git)
+* [Fugitive](https://github.com/tpope/vim-fugitive.git)
+* [FZF](https://github.com/junegunn/fzf.vim.git)
+* [Polyglot](https://github.com/sheerun/vim-polyglot.git)
+* [Devicons](https://github.com/ryanoasis/vim-devicons.git)
+* [Tmuxline](https://github.com/edkolev/tmuxline.vim.git)
+* [Vim tmux](https://github.com/tmux-plugins/vim-tmux.git)
 ### Replicating the repository on a machine
 - Clone the repository (_recursively_ to clone plugins as well):
 	```bash

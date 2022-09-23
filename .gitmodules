@@ -44,3 +44,9 @@
 [submodule "pack/theme/start/vim-devicons"]
 	path = pack/theme/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/theme/start/vim-tmux"]
+	path = pack/theme/start/vim-tmux
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "pack/theme/start/vim-tmux-plugin"]
+	path = pack/theme/start/vim-tmux-plugin
+	url = https://github.com/tmux-plugins/vim-tmux.git
