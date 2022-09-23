@@ -46,10 +46,6 @@ if has('termguicolors')
 	set termguicolors
 endif
 
-set background=light
-
-colorscheme gruvbox-material
-
 function! ChangeBackground()
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark   " for dark version of theme
