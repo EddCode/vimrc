@@ -287,7 +287,7 @@ fun! s:acquire_theme_data()
         \     'default': {
         \       'allow_bold': 1,
         \       'allow_italic': 1,
-        \       'transparent_background': 1,
+        \       'transparent_background': 0,
         \     }
         \   },
         \   'language': {
