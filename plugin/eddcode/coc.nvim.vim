@@ -5,13 +5,14 @@
 let g:coc_global_extensions=[
 	\ 'coc-css',
 	\ 'coc-emmet',
+  \ 'coc-html',
 	\ 'coc-pairs',
 	\ 'coc-tsserver',
 	\ 'coc-snippets',
 	\ 'coc-go',
 	\ 'coc-vimlsp',
 	\ 'coc-ultisnips',
-	\ 'coc-python'
+	\ 'coc-python',
 	\]
 
 " COC TAB FUNCTIONS
@@ -20,6 +21,7 @@ inoremap <silent><expr> <TAB>
 	\ <SID>check_back_space() ? "\<TAB>" :
 	\ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 
 let g:coc_snippet_next = "<tab>"
 

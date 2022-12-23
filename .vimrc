@@ -7,6 +7,9 @@ set redrawtime=10000
 set ts=4 sts=4 sw=4 noexpandtab
 let mapleader=" "
 
+" Javascript specific settings.
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -15,8 +18,8 @@ set cmdheight=2
 filetype indent plugin on
 
 " Persist undo history between file editing sessions.
-set undofile
-set undodir=~/.vim/undodir
+"set undofile
+"set undodir=~/.vim/undodir
 
 " Modify indenting settings
 set autoindent  " autoindent always ON.
@@ -185,10 +188,13 @@ map <Leader>w= <C-w> =
 nmap <Leader>ws :sp <CR>
 nmap <Leader>wv :vsp <CR>
 
-nnoremap <Leader>ws :new<CR>
-nnoremap <Leader>wv :vnew<CR>
-nnoremap <Leader>wn :wincmd w<CR>
-nnoremap <Leader>wc :close<CR>
+nnoremap <C-i> :new<CR>
+nnoremap <C-s> :vnew<CR>
+nnoremap <C-n> :wincmd w<CR>
+nnoremap <C-c> :close<CR>
+
+noremap <Leader>tv :botright vnew <Bar> :terminal <cr>
+noremap <Leader>th :botright new <Bar> :terminal <cr>
 
 " ==============================
 " Manage easeir windows actions

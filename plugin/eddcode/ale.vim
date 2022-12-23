@@ -22,16 +22,17 @@ let g:ale_linters = {
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
 	\ 'css': ['stylelint'],
+	\ 'python': ['autopep8']
 	\ }
 
 let g:ale_fixers = {
-	\ 'javascript': ['eslint', 'prettier_eslint', 'importjs'],
-	\ 'javascriptreact': ['eslint', 'prettier_eslint', 'importjs'],
-	\ 'typescript': ['eslint', 'tslint', 'prettier_eslint'],
+	\ 'javascript': ['eslint', 'importjs'],
+	\ 'javascriptreact': ['eslint', 'importjs'],
+	\ 'typescript': ['eslint', 'tslint'],
 	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['reorder-python-imports', 'black', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
-	\ 'css': ['prettier']
+	\ 'css': ['stylelint']
 	\ }
 
 " MAPING :ALEFix
