@@ -4,7 +4,7 @@ set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 set nowritebackup
 set redrawtime=10000
-set ts=4 sts=4 sw=4 noexpandtab
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 let mapleader=" "
 
 " Javascript specific settings.
