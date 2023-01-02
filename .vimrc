@@ -76,7 +76,7 @@ highlight SpecialKey guifg=#4a4a59 gui=italic
 set incsearch
 set hlsearch
 set smartcase
-map <C-S> :nohlsearch<CR>
+map <C-q> :nohlsearch<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set list listchars=tab:►\ ,eol:-
