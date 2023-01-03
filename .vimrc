@@ -215,4 +215,4 @@ nnoremap <Leader>xn :!node %<cr>
 nnoremap <Leader>xg :!go run  %<cr>
 
 
-set rtp+=~/.fzf
+set rtp+=/opt/homebrew/opt/fzf
