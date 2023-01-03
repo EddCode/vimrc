@@ -15,9 +15,9 @@ let g:ale_fix_on_save = 1
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 
 let g:ale_linters = {
-	\ 'javascript': ['eslint'],
-	\ 'javascriptreact': ['eslint'],
-	\ 'typescript': ['eslint'],
+	\ 'javascript': ['eslint', 'prettier'],
+	\ 'javascriptreact': ['eslint', 'prettier'],
+	\ 'typescript': ['eslint', 'prettier'],
 	\ 'go': ['golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],

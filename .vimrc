@@ -55,7 +55,7 @@ function! ChangeBackground()
     colorscheme sonokai
   else
     set background=light  " for light version of theme
-    colorscheme PaperColor
+    colorscheme humanoid
   endif
 
   try
