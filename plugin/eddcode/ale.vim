@@ -14,10 +14,13 @@ let g:ale_fix_on_save = 1
 
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 
+let js_fixers = ['eslint', 'prettier']
+
 let g:ale_linters = {
-	\ 'javascript': ['eslint', 'prettier'],
-	\ 'javascriptreact': ['eslint', 'prettier'],
-	\ 'typescript': ['eslint', 'prettier'],
+	\ 'javascript': js_fixers,
+	\ 'javascriptreact': js_fixers,
+	\ 'typescript': js_fixers,
+	\ 'typescriptreact': js_fixers, 
 	\ 'go': ['golint'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
@@ -26,9 +29,11 @@ let g:ale_linters = {
 	\ }
 
 let g:ale_fixers = {
-	\ 'javascript': ['eslint', 'importjs'],
-	\ 'javascriptreact': ['eslint', 'importjs'],
-	\ 'typescript': ['eslint', 'tslint'],
+	\ 'javascript': js_fixers,
+	\ 'javascriptreact': js_fixers, 
+	\ 'javascript.jsx': js_fixers,
+	\ 'typescript': js_fixers,
+	\ 'typescriptreact': js_fixers, 
 	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
 	\ 'python': ['reorder-python-imports', 'black', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
