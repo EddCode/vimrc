@@ -1,6 +1,6 @@
 " NERDtree
-map <Leader>d :NERDTreeToggle<CR>
-map <Leader>df :NERDTreeFind<CR>
+map <Leader>t :NERDTreeToggle<CR>
+map <Leader>tf :NERDTreeFind<CR>
 map <Leader>r :NERDTreeRefreshRoot<CR>
 
 let NERDTreeQuitOnOpen=1

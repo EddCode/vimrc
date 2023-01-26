@@ -167,7 +167,7 @@ nnoremap <A-m> :!mv<Space>%<Space>
 map <Leader>n :bnext<CR>
 map <Leader>p :bprev<CR>
 map <Leader>b :buffers<CR>
-map <Leader>c :bd<CR>
+map <Leader>bd :bd<CR>
 nnoremap <Leader>U :UndotreeShow<CR>
 " quick semi
 nnoremap <Leader>; $a;<Esc>
@@ -201,10 +201,10 @@ noremap <Leader>th :botright new <Bar> :terminal <cr>
 " ==============================
 
 " Move through the windows
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <Leader>h <C-w>h
+map <Leader>j <C-w>j
+map <Leader>k <C-w>k
+map <Leader>l <C-w>l
 
 
 " =======================
