@@ -55,7 +55,7 @@ function! ChangeBackground()
     colorscheme sonokai
   else
     set background=light  " for light version of theme
-    colorscheme humanoid
+    colorscheme PaperColor
   endif
 
   try
@@ -69,7 +69,7 @@ call ChangeBackground()
 
 "Invisible character colors
 highlight NonText guifg=#4a4a59
-highlight Comment guifg=red gui=italic
+highlight Comment guifg=magenta gui=italic
 highlight SpecialKey guifg=#4a4a59 gui=italic
 
 " highlight searchings
@@ -214,5 +214,11 @@ map <Leader>l <C-w>l
 nnoremap <Leader>xn :!node %<cr>
 nnoremap <Leader>xg :!go run  %<cr>
 
+
+" Configuración de colores para GitSigns
+highlight GitSignsAdded ctermfg=2 guifg=#50a14f cterm=bold
+highlight GitSignsRemoved ctermfg=1 guifg=#e74c3c cterm=bold
+highlight GitSignsChanged ctermfg=3 guifg=#f1c40f cterm=bold
+highlight GitSignsChangeRemoved ctermfg=5 guifg=#e64ce6 cterm=bold
 
 set rtp+=/opt/homebrew/opt/fzf

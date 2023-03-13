@@ -1608,10 +1608,17 @@ fun! s:apply_syntax_highlightings()
   " TypeScript Highlighting
   exec 'hi typescriptDecorators' . s:fg_orange
   exec 'hi typescriptLabel' . s:fg_purple . s:ft_bold
+  exec 'hi typescriptImport' . s:fg_pink . s:ft_italic_bold
+  exec 'hi typescriptExport' . s:fg_pink . s:ft_italic_bold
+  exec 'hi typescriptModuleAs' . s:fg_pink . s:ft_italic_bold
+  exec 'hi typescriptFrom' . s:fg_pink . s:ft_italic_bold
+  exec 'hi typescriptExportDefault' . s:fg_pink . s:ft_italic_bold
+  exec 'hi typescriptGlobal' . s:fg_blue . s:ft_italic_bold
+  exec 'hi typescriptStorageClass' . s:fg_blue . s:ft_italic_bold
 
   " @target https://github.com/pangloss/vim-javascript
-  exec 'hi jsImport' . s:fg_pink . s:ft_bold
-  exec 'hi jsExport' . s:fg_pink . s:ft_bold
+  exec 'hi jsImport' . s:fg_pink . s:ft_italic_bold
+  exec 'hi jsExport' . s:fg_pink . s:ft_italic_bold
   exec 'hi jsModuleAs' . s:fg_pink . s:ft_bold
   exec 'hi jsFrom' . s:fg_pink . s:ft_bold
   exec 'hi jsExportDefault' . s:fg_pink . s:ft_bold

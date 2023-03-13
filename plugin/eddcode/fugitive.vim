@@ -9,4 +9,3 @@ nnoremap <Leader>gp :Git push<cr>
 nnoremap <Leader>gl :Git pull<cr>
 nnoremap <leader>gb :Git blame<CR>
 nnoremap <leader>gc :Git commit<CR>
-nnoremap <leader>gr :Git rebase -i<CR>

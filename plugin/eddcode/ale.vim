@@ -1,6 +1,7 @@
 " Only run linters named in ale_linters settings.
 let g:ale_sign_error = '💩'
-let g:ale_sign_warning = '👎'
+let g:ale_sign_warning = '😵'
+
 highlight ALEErrorSign ctermbg=NONE ctermfg=161
 highlight ALEWarningSign ctermbg=NONE ctermfg=172
 
@@ -48,6 +49,7 @@ nnoremap <silent> [a :ALEPreviousWrap <CR>
 nnoremap <silent> ]a :ALENextWrap <CR>
 nmap <silent> <C-k> <Plug>ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
 
 "packloadall
 " Load all of the helptags now, after plugins have been loaded.
