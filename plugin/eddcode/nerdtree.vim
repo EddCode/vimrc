@@ -6,6 +6,8 @@ map <Leader>r :NERDTreeRefreshRoot<CR>
 let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=35
 let NERDTreeCaseSensitiveSort=1
+let g:NERDTreeWinPos = 1
+
 
 let g:NERDTreeGitStatusWithFlags = 1
 let g:NERDTreeGitStatusNodeColorization = 1

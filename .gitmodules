@@ -26,9 +26,6 @@
 [submodule "pack/eddcode/start/vim-fugitive.git"]
 	path = pack/eddcode/start/vim-fugitive.git
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/eddcode/start/copilot.vim"]
-	path = pack/eddcode/start/copilot.vim
-	url = https://github.com/github/copilot.vim.git
 [submodule "pack/eddcode/start/fzf"]
 	path = pack/eddcode/start/fzf
 	url = https://github.com/junegunn/fzf.vim.git
@@ -50,3 +47,6 @@
 [submodule "pack/theme/start/vim-tmux-plugin"]
 	path = pack/theme/start/vim-tmux-plugin
 	url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "pack/plugins/github/start/copilot"]
+	path = pack/plugins/github/start/copilot
+	url = https://github.com/github/copilot.vim.git

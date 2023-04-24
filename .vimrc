@@ -27,7 +27,7 @@ set smartindent
 set nowrap      " wrap line if it`s larger
 
 " Modify some other settings about files
-set encoding=utf8          " always use unicode (god damnit, windows)
+set encoding=utf-8          " always use unicode (god damnit, windows)
 set backspace=indent,eol,start " backspace always works on insert mode
 set hidden
 "set invlist
@@ -41,6 +41,8 @@ set laststatus=1
 syntax enable
 set re=0
 set t_Co=256
+
+set guifont=Victor\ Mono:h12
 
 let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
