@@ -24,6 +24,7 @@ filetype indent plugin on
 " Modify indenting settings
 set autoindent  " autoindent always ON.
 set smartindent
+set formatoptions-=cro " auto-wrap comments
 set nowrap      " wrap line if it`s larger
 
 " Modify some other settings about files
