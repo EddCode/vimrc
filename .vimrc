@@ -82,7 +82,7 @@ set smartcase
 map <C-q> :nohlsearch<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set list listchars=tab:►\ ,eol:-
+" set list listchars=tab:►\ ,eol:-
 set noshowmode
 set wildmenu            " enable visual wildmenu
 set showcmd
@@ -175,9 +175,7 @@ nnoremap <Leader>U :UndotreeShow<CR>
 " quick semi
 nnoremap <Leader>; $a;<Esc>
 
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>e :e!<CR>
+nmap <Leader>w :w <CR>
 
 " ==> resize horizontal windows
 map <Leader>w+ <C-w>5+
@@ -190,6 +188,7 @@ map <Leader>w= <C-w> =
 " ==> split windows
 nmap <Leader>ws :sp <CR>
 nmap <Leader>wv :vsp <CR>
+
 
 nnoremap <C-i> :new<CR>
 nnoremap <C-s> :vnew<CR>
@@ -209,19 +208,23 @@ map <Leader>j <C-w>j
 map <Leader>k <C-w>k
 map <Leader>l <C-w>l
 
-
-" =======================
-" Run NodeJs & Golang
-" =======================
-" run current file
-nnoremap <Leader>xn :!node %<cr>
-nnoremap <Leader>xg :!go run  %<cr>
-
-
 " Configuración de colores para GitSigns
 highlight GitSignsAdded ctermfg=2 guifg=#50a14f cterm=bold
 highlight GitSignsRemoved ctermfg=1 guifg=#e74c3c cterm=bold
 highlight GitSignsChanged ctermfg=3 guifg=#f1c40f cterm=bold
 highlight GitSignsChangeRemoved ctermfg=5 guifg=#e64ce6 cterm=bold
+
+let &t_SR = "\033]12;199\x7\e[3 q"
+let &t_SI = "\033]12;199\x7\e[5 q"
+let &t_EI = "\033]12;deepskyblue\x7\e[1 q"
+
+let &t_SR = "\033]12;199\x7\e[3 q"
+let &t_SI = "\033]12;199\x7\e[5 q"
+let &t_EI = "\033]12;deepskyblue\x7\e[1 q"
+
+augroup myCmds
+  au!
+  autocmd VimEnter * silent !echo -ne "\033]12;deepskyblue\x7\e[1 q"
+augroup END
 
 set rtp+=/opt/homebrew/opt/fzf
