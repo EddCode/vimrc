@@ -47,6 +47,7 @@
 [submodule "pack/theme/start/vim-tmux-plugin"]
 	path = pack/theme/start/vim-tmux-plugin
 	url = https://github.com/tmux-plugins/vim-tmux.git
-[submodule "pack/plugins/github/start/copilot"]
-	path = pack/plugins/github/start/copilot
+
+[submodule "pack/eddcode/start/copilot.vim"]
+	path = pack/eddcode/start/copilot.vim
 	url = https://github.com/github/copilot.vim.git
