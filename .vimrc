@@ -198,6 +198,14 @@ nnoremap <C-c> :close<CR>
 noremap <Leader>tv :botright vnew <Bar> :terminal <cr>
 noremap <Leader>th :botright new <Bar> :terminal <cr>
 
+
+" =======================
+" " Run NodeJs & Golang
+" " =======================
+run current file
+nnoremap <Leader>xn :!node %<cr>
+nnoremap <Leader>xg :!go run  %<cr>
+
 " ==============================
 " Manage easeir windows actions
 " ==============================
@@ -213,18 +221,5 @@ highlight GitSignsAdded ctermfg=2 guifg=#50a14f cterm=bold
 highlight GitSignsRemoved ctermfg=1 guifg=#e74c3c cterm=bold
 highlight GitSignsChanged ctermfg=3 guifg=#f1c40f cterm=bold
 highlight GitSignsChangeRemoved ctermfg=5 guifg=#e64ce6 cterm=bold
-
-let &t_SR = "\033]12;199\x7\e[3 q"
-let &t_SI = "\033]12;199\x7\e[5 q"
-let &t_EI = "\033]12;deepskyblue\x7\e[1 q"
-
-let &t_SR = "\033]12;199\x7\e[3 q"
-let &t_SI = "\033]12;199\x7\e[5 q"
-let &t_EI = "\033]12;deepskyblue\x7\e[1 q"
-
-augroup myCmds
-  au!
-  autocmd VimEnter * silent !echo -ne "\033]12;deepskyblue\x7\e[1 q"
-augroup END
 
 set rtp+=/opt/homebrew/opt/fzf

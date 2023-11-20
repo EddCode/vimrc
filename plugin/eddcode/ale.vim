@@ -2,8 +2,8 @@
 let g:ale_sign_error = '💩'
 let g:ale_sign_warning = '😵'
 
-"highlight ALEErrorSign ctermbg=NONE ctermfg=161
-"highlight ALEWarningSign ctermbg=NONE ctermfg=172
+highlight ALEErrorSign ctermbg=NONE ctermfg=161
+highlight ALEWarningSign ctermbg=NONE ctermfg=172
 
 " linter setting
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
