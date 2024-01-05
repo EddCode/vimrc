@@ -56,9 +56,11 @@ function! ChangeBackground()
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark   " for dark version of theme
     colorscheme sonokai
+    :silent :!tmux source-file ~/.tmux/tmux-dark.conf
   else
     set background=light  " for light version of theme
     colorscheme PaperColor
+    :silent :!tmux source-file ~/.tmux/tmux-light.conf
   endif
 
   try
@@ -135,19 +137,6 @@ augroup filetypedetect
   
   autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
 augroup END
-"=====================================================
-"===================== STATUSLINE ====================
-
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'win'  : '#I #W',
-      \'cwin' : '#I #W',
-      \'x'    : '%a',
-      \'y'    : '%Y-%m-%d %H:%M',
-      \'z'    : ' #h',
-      \'options' : {'status-justify' : 'left', 'status-position' : 'bottom'}}
-
-let g:tmuxline_powerline_separators = 0
 
 " ===================
 "   Mapping
