@@ -55,11 +55,11 @@ endif
 function! ChangeBackground()
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark   " for dark version of theme
-    colorscheme sonokai
+    colorscheme gruvbox-material
     :silent :!tmux source-file ~/.tmux/tmux-dark.conf
   else
     set background=light  " for light version of theme
-    colorscheme PaperColor
+    colorscheme gruvbox-material
     :silent :!tmux source-file ~/.tmux/tmux-light.conf
   endif
 
