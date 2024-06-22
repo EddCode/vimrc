@@ -14,6 +14,14 @@ let g:coc_global_extensions=[
 	\ 'coc-python',
 	\]
 
+function! CleanJavaWorkspace() abort
+  if exists(':CocCommand')
+    call timer_start(500, { -> execute('CocCommand java.clean.workspace') })
+  endif
+endfunction
+
+autocmd BufRead,BufNewFile *.java call CleanJavaWorkspace()
+
 " COC TAB FUNCTIONS
 inoremap <silent><expr> <TAB>
 	\ pumvisible() ? "\<C-n>" :

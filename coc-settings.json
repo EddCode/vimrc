@@ -46,5 +46,6 @@
       "typeParameter": "\uf728",
       "default": "\uf29c"
   },
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+  "java.jdt.ls.vmargs": "-Xms1g -Xmx2G -XX:+UseG1GC -XX:+UseStringDeduplication"
 }
