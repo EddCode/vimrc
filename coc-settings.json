@@ -47,5 +47,14 @@
       "default": "\uf29c"
   },
   "snippets.ultisnips.pythonPrompt": false,
-  "java.jdt.ls.vmargs": "-Xms1g -Xmx2G -XX:+UseG1GC -XX:+UseStringDeduplication"
+  "java.jdt.ls.java.home": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+  "java.home": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.configuration.runtimes": [
+      {
+          "name": "JavaSE-21",
+          "path": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home",
+          "default": true
+      }
+  ],
 }

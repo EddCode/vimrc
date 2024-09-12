@@ -1,0 +1,45 @@
+[submodule "pack/eddcode/start/ale"]
+	path = pack/eddcode/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/eddcode/start/nerdtree"]
+	path = pack/eddcode/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/eddcode/start/coc"]
+	path = pack/eddcode/start/coc
+	url = https://github.com/neoclide/coc.nvim.git
+[submodule "pack/eddcode/start/fugitive"]
+	path = pack/eddcode/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/eddcode/start/nerdtree-git"]
+	path = pack/eddcode/start/nerdtree-git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/eddcode/start/fzf"]
+	path = pack/eddcode/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/theme/start/devicons"]
+	path = pack/theme/start/devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
+[submodule "pack/theme/start/tmuxline"]
+	path = pack/theme/start/tmuxline
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "pack/eddcode/start/polyglot"]
+	path = pack/eddcode/start/polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "pack/theme/start/airline"]
+	path = pack/theme/start/airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/eddcode/start/airline-themes"]
+	path = pack/eddcode/start/airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/theme/start/tmux"]
+	path = pack/theme/start/tmux
+	url = https://github.com/tmux-plugins/vim-tmux.git
+[submodule "pack/eddcode/start/nerdcommenter"]
+	path = pack/eddcode/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
+[submodule "pack/theme/start/indentLine"]
+	path = pack/theme/start/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule "pack/github/start/copilot"]
+	path = pack/github/start/copilot
+	url = https://github.com/github/copilot.vim.git

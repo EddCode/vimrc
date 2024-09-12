@@ -17,7 +17,9 @@ let g:coc_global_extensions=[
 
 function! CleanJavaWorkspace() abort
   if exists(':CocCommand')
-    call timer_start(500, { -> execute('CocCommand java.clean.workspace') })
+    if filereadable(findfile('pom.xml', '.;')) || filereadable(findfile('build.gradle', '.;'))
+      call timer_start(500, { -> execute('CocCommand java.clean.workspace') })
+    endif
   endif
 endfunction
 
