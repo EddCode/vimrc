@@ -12,10 +12,13 @@ let g:ale_linters_explicit = 1
 let g:ale_disable_lsp = 1
 let g:ale_list_window_size = 5
 let g:ale_fix_on_save = 1
+let g:ale_floating_window = 1
+
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 
-let js_fixers = ['eslint', 'prettier']
+let js_fixers = ['eslint']
 
 let g:ale_linters = {
 	\ 'javascript': js_fixers,
