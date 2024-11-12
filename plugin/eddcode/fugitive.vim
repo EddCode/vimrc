@@ -1,7 +1,8 @@
 
 nmap <leader>gf :diffget //2<CR>
 nmap <leader>gh :diffget //3<CR>
-nmap <leader>gd :Gvdiffsplit!<CR>
+nmap <leader>gd :Gvdiffsplit<CR>
+nmap <leader>gm :Gvdiffsplit!<CR>
 nmap <leader>gu :diffupdate<CR>
 
 nnoremap <Leader>G :G<cr>
