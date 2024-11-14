@@ -5,13 +5,13 @@
 let g:coc_global_extensions=[
 	\ 'coc-css',
 	\ 'coc-emmet',
-  	\ 'coc-html',
+  \ 'coc-html',
 	\ 'coc-pairs',
 	\ 'coc-tsserver',
 	\ 'coc-snippets',
 	\ 'coc-go',
 	\ 'coc-vimlsp',
-	\ 'coc-python',	
+	\ 'coc-python',
 	\ 'coc-java',
 	\]
 

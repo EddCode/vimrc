@@ -1,9 +1,9 @@
 " Only run linters named in ale_linters settings.
-let g:ale_sign_error = '💩'
-let g:ale_sign_warning = '😵'
+let g:ale_sign_error = '🤬'
+let g:ale_sign_warning = '🧐'
 
-highlight ALEErrorSign ctermbg=NONE ctermfg=161
-highlight ALEWarningSign ctermbg=NONE ctermfg=172
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
 
 " linter setting
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
@@ -12,20 +12,19 @@ let g:ale_linters_explicit = 1
 let g:ale_disable_lsp = 1
 let g:ale_list_window_size = 5
 let g:ale_fix_on_save = 1
-let g:ale_floating_window = 1
+let g:ale_virtualtext_cursor = 'current'
 
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
-let g:ale_floating_window_border = ['│', '─', '╭', '╮', '╯', '╰']
 
-let js_fixers = ['eslint']
+let js_fixers = ['eslint', 'tsserver']
 
 let g:ale_linters = {
 	\ 'javascript': js_fixers,
 	\ 'javascriptreact': js_fixers,
 	\ 'typescript': js_fixers,
-	\ 'typescriptreact': js_fixers, 
-	\ 'go': ['golint'],
+	\ 'typescriptreact': js_fixers,
+	\ 'go': ['golint', 'gopls'],
 	\ 'dockerfile': ['dockerfile_lint'],
 	\ 'yaml': ['yamllint'],
 	\ 'css': ['stylelint'],
@@ -33,12 +32,13 @@ let g:ale_linters = {
 	\ }
 
 let g:ale_fixers = {
+	\ '*': ['remove_trailing_lines', 'trim_whitespace'],
 	\ 'javascript': js_fixers,
-	\ 'javascriptreact': js_fixers, 
+	\ 'javascriptreact': js_fixers,
 	\ 'javascript.jsx': js_fixers,
 	\ 'typescript': js_fixers,
-	\ 'typescriptreact': js_fixers, 
-	\ 'go': ['gofmt', 'goimports', 'remove_trailing_lines', 'trim_whitespace'],
+	\ 'typescriptreact': js_fixers,
+	\ 'go': ['gofmt', 'goimports'],
 	\ 'python': ['reorder-python-imports', 'black', 'add_blank_lines_for_python_control_statements'],
 	\ 'yaml': ['prettier'],
 	\ 'css': ['stylelint']
