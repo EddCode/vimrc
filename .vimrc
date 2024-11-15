@@ -1,11 +1,14 @@
-set nocompatible            " disable vi compatibility mode
-set history=1000            " increase history size
+let mapleader=" "
+
+set undodir=~/.vim/undodir
+set undofile
 set noswapfile              " don't create swapfiles
 set nobackup                " don't backup, use git!
 set nowritebackup
 set redrawtime=10000
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-let mapleader=" "
+
+set history=1000            " increase history size
 
 " Javascript specific settings.
 autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
@@ -87,6 +90,7 @@ map <C-q> :nohlsearch<CR>
 " set list listchars=tab:►\ ,eol:-
 set noshowmode
 set wildmenu            " enable visual wildmenu
+set wildoptions=pum     " enable wildmenu in command line
 set showcmd
 
 set number             " show line numbers
