@@ -17,7 +17,7 @@ let g:ale_virtualtext_cursor = 'current'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 
-let js_fixers = ['eslint', 'tsserver']
+let js_fixers = ['eslint', 'prettier']
 
 let g:ale_linters = {
 	\ 'javascript': js_fixers,
