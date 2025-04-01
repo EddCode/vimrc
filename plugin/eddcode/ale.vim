@@ -6,16 +6,15 @@ highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 
 " linter setting
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
 let g:airline#extensions#ale#enabled = 1	                " Set this. Airline will handle the rest.
 let g:ale#statusline#Count = 1
 let g:ale_linters_explicit = 1
 let g:ale_disable_lsp = 1
 let g:ale_list_window_size = 5
-let g:ale_fix_on_save = 1
 let g:ale_virtualtext_cursor = 'current'
-
-let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-
+let g:ale_fix_on_save = 1
 
 let js_fixers = ['eslint', 'prettier']
 
