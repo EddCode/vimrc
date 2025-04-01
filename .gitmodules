@@ -43,3 +43,6 @@
 [submodule "pack/github/start/copilot"]
 	path = pack/github/start/copilot
 	url = https://github.com/github/copilot.vim.git
+[submodule "pack/language/start/vim-go"]
+	path = pack/language/start/vim-go
+	url = https://github.com/fatih/vim-go.git

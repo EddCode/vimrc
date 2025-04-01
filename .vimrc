@@ -58,7 +58,7 @@ endif
 function! ChangeBackground()
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark   " for dark version of theme
-    colorscheme gruvbox-material
+    colorscheme sonokai
     :silent :!tmux source-file ~/.tmux/tmux-dark.conf
   else
     set background=light  " for light version of theme
@@ -130,15 +130,15 @@ exec "syn sync ccomment cComment minlines=" . b:c_minlines
 augroup filetypedetect
   command! -nargs=* -complete=help Help vertical belowright help <args>
   autocmd FileType help wincmd L
-  
+
   autocmd BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
-  
+
   autocmd BufNewFile,BufRead *.txt setlocal noet ts=4 sw=4
   autocmd BufNewFile,BufRead *.md setlocal noet ts=4 sw=4
   autocmd BufNewFile,BufRead *.vim setlocal expandtab shiftwidth=2 tabstop=2
   autocmd BufNewFile,BufRead *.sh setlocal expandtab shiftwidth=2 tabstop=2
   autocmd BufNewFile,BufRead *.fish setlocal expandtab shiftwidth=2 tabstop=2
-  
+
   autocmd FileType go setlocal noexpandtab tabstop=4 shiftwidth=4
 augroup END
 
